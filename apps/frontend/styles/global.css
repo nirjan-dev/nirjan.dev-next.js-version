@@ -1,0 +1,275 @@
+  /* app styles */
+  :root {
+    /* colors */
+    --purple-hue: 257.5;
+    --green-hue: 95;
+  
+    --purple-gradient-dark: hsl(272, 76%, 53%);
+    --purple-gradient-light: hsl(260, 100%, 44%);
+    --green-gradient-light: hsl(193, 100%, 50%);
+    --green-gradient-dark: hsl(126, 98%, 78%);
+  
+    /* brand colors */
+    --primary-hue: var(--purple-hue);
+    --primary-sl: 48%, 38%;
+    --primary-light-sl: 30%, 60%;
+    --primary-dark-sl: 100%, 23.5%;
+    --primary: hsl(var(--primary-hue), var(--primary-sl));
+    --primary-light: hsl(var(--primary-hue), var(--primary-light-sl));
+    --primary-dark: hsl(var(--primary-hue), var(--primary-dark-sl));
+  
+    --secondary-hue: var(--green-hue);
+    --secondary-sl: 45%, 50%;
+    --secondary-light-sl: 35%, 65%;
+    --secondary-dark-sl: 67%, 23%;
+    --secondary: hsl(var(--secondary-hue), var(--secondary-sl));
+    --secondary-light: hsl(var(--secondary-hue), var(--secondary-light-sl));
+    --secondary-dark: hsl(var(--secondary-hue), var(--secondary-dark-sl));
+  
+    --light-sl: 85%, 85%;
+    --lighter-sl: 95%, 95%;
+    --lightest-sl: 99%, 99%;
+    --light: hsl(var(--primary-hue), var(--light-sl));
+    --lighter: hsl(var(--primary-hue), var(--lighter-sl));
+    --lightest: hsl(var(--primary-hue), var(--lightest-sl));
+  
+    --dark-sl: 30%, 30%;
+    --darker-sl: 20%, 20%;
+    --darkest-sl: 5%, 5%;
+    --dark: hsl(var(--primary-hue), var(--dark-sl));
+    --darker: hsl(var(--primary-hue), var(--darker-sl));
+    --darkest: hsl(var(--primary-hue), var(--darkest-sl));
+  
+    --primary-gradient: linear-gradient(to right, var(--purple-gradient-dark), var(--purple-gradient-light));
+    --secondary-gradient: linear-gradient(to right, var(--green-gradient-light), var(--green-gradient-dark));
+  
+    --success: hsl(125, 62%, 32%);
+    --danger: hsl(5, 85%, 29%);
+    --link-color: var(--secondary-dark);
+  
+    /* typography */
+    --body-font-family: 'Recursive', Tahoma, Arial, Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --heading-font-family: var(--body-font-family);
+  
+    --light-font-weight: 200;
+    --regular-font-weight: 320;
+    --bold-font-weight: 600;
+    --black-font-weight: 800;
+  
+    --body-line-height: 1.6;
+    --body-mobile-line-height: 1.4;
+    --heading-line-height: 1.2;
+  
+    --caps-letter-spacing: 0.1rem;
+    --heading-letter-spacing: -0.1rem;
+  
+    --font-size-0: 0.7rem;
+    --font-size-1: 1rem;
+    --font-size-2: 1.4rem;
+    --font-size-3: 1.9rem;
+    --font-size-4: 2.8rem;
+    --font-size-5: 3.9rem;
+    --font-size-6: 5.6rem;
+    --font-size-7: 7.9rem;
+  
+    /* spacing */
+    --spacing-0: 0.7rem;
+    --spacing-1: 1.2rem;
+    --spacing-2: 1.9rem;
+    --spacing-3: 3.1rem;
+    --spacing-4: 5.083rem;
+    --spacing-5: 8.224rem;
+    --spacing-6: 13.307rem;
+    --spacing-7: 21.53rem;
+  
+    /* border radius */
+    --border-radius-normal: 5px;
+  
+    /* box shadow */
+    --box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --box-shadow-DEFAULT: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --box-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --box-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --box-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    --box-shadow-bottom-nav: 0 -4px 6px -1px hsla(var(--primary-hue), var(--primary-light-sl), 0.1),
+      0 -2px 4px -1px hsla(var(--primary-hue), var(--primary-light-sl), 0.6);
+  
+    /* z-index */
+    --z-index-toc: 99;
+    --z-index-bottom-nav: 999;
+    --z-index-sticky-nav: 999;
+    --z-index-skip-link: 9999;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-dark-sl: 48%, 38%;
+      --primary-light-sl: 38%, 50%;
+      --primary-sl: 100%, 23.5%;
+  
+      --secondary-sl: 86%, 25%;
+      --secondary-light-sl: 75%, 70%;
+      --secondary-dark-sl: 90%, 35%;
+  
+      --dark-sl: 93%, 93%;
+      --darker-sl: 95%, 95%;
+      --darkest-sl: 98%, 98%;
+  
+      --light-sl: 30%, 30%;
+      --lighter-sl: 20%, 20%;
+      --lightest-sl: 5%, 5%;
+    }
+  }
+  
+  *,
+  :before,
+  :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    font-size: calc(var(--font-size-1) + 0.3vw);
+  }
+  body {
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    background-color: var(--lightest);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-variation-settings: 'CASL' 0;
+    background-image: url('/img/noise.png');
+  }
+  
+  body > main {
+    flex: 1;
+  }
+  h1,
+  .h1 {
+    font-size: var(--font-size-6);
+  }
+  h2,
+  .h2 {
+    font-size: var(--font-size-5);
+  }
+  h3,
+  .h3 {
+    font-size: var(--font-size-4);
+  }
+  h4,
+  .h4 {
+    font-size: var(--font-size-3);
+  }
+  h5,
+  .h5 {
+    font-size: var(--font-size-2);
+  }
+  h6,
+  .h6 {
+    font-size: var(--font-size-1);
+  }
+  small {
+    font-size: 95%;
+  }
+  ul,
+  ol {
+    padding-left: var(--spacing-2);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--black-font-weight);
+    line-height: var(--heading-line-height);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--primary-dark);
+    font-variation-settings: 'CASL' 1;
+  }
+  strong {
+    color: var(--primary-dark);
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    max-width: 66ch;
+  }
+  
+  a {
+    color: var(--link-color);
+    box-shadow: none;
+    transition: color 200ms cubic-bezier(0.39, 0.58, 0.57, 1);
+    text-decoration: none;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: var(--secondary);
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0.1px;
+    position: absolute;
+  }
+  
+  @media (max-width: 90em) {
+    html {
+      font-size: calc(var(--font-size-1) + 0.2vw);
+    }
+  }
+  @media (max-width: 50em) {
+    html {
+      font-size: calc(var(--font-size-1) - 0.1vw);
+    }
+    body {
+      line-height: var(--body-mobile-line-height);
+    }
+    h1,
+    .h1 {
+      font-size: var(--font-size-5);
+    }
+    h2,
+    .h2 {
+      font-size: var(--font-size-4);
+    }
+    h3,
+    .h3 {
+      font-size: var(--font-size-3);
+    }
+  }
+  
+  *:focus {
+    /* Provide a fallback style for browsers
+       that don't support :focus-visible */
+    outline: 2px solid var(--secondary);
+    border-radius: var(--border-radius-normal);
+  }
+  
+  *:focus:not(:focus-visible) {
+    /* Remove the focus indicator on mouse-focus for browsers
+       that do support :focus-visible */
+    border-radius: none;
+    outline: none;
+  }
+  
+  *:focus-visible {
+    /* Draw a very noticeable focus style for
+       keyboard-focus on browsers that do support
+       :focus-visible */
+    outline: 4px dashed var(--secondary);
+    border-radius: var(--border-radius-normal);
+  }
+  
