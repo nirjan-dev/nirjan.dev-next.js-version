@@ -1,0 +1,14 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--lightest);
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: var(--z-index-sticky-nav);
+  @media (max-width: 560px) {
+    position: static;
+    flex-direction: column;
+  }
+}

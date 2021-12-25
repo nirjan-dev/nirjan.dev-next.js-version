@@ -1,0 +1,107 @@
+.menuBtn {
+  color: var(--dark);
+  padding: var(--spacing-1) var(--spacing-2);
+  min-width: 5rem;
+  background-color: transparent;
+  border: unset;
+  cursor: pointer;
+  display: none;
+  transform: translateY(8px);
+
+  &:focus {
+    color: var(--darkest);
+  }
+
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+      margin-top: var(--spacing-1);
+    }
+  }
+}
+
+.subMenu {
+  list-style: none;
+  justify-content: space-between;
+  background: var(--light);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-out, opacity 0.1s linear;
+  display: flex;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--primary);
+  }
+
+  &.isVisible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: initial;
+  }
+  &__link {
+    padding: var(--spacing-1) var(--spacing-1);
+    display: inline-block;
+    font-size: var(--font-size-2);
+    color: var(--dark);
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  color: inherit;
+  display: inline-block;
+  & > :global(svg) {
+    fill: currentColor;
+  }
+}
+
+.ggMenu {
+  transform: scale(var(--ggs, 1));
+}
+.ggMenu,
+.ggMenu::after,
+.ggMenu::before {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background: currentColor;
+  transition: opacity 0.1s, transform 0.2s ease-out;
+}
+.ggMenu::after,
+.ggMenu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+.ggMenu::after {
+  top: 8px;
+}
+
+.menuBtn {
+  &.isActive {
+    .ggMenu::before {
+      opacity: 0;
+    }
+    .ggMenu::after {
+      transform: rotate(-90deg) translateX(8px);
+    }
+
+    .ggMenu {
+      transform: rotate(44deg);
+    }
+  }
+}

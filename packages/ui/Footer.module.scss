@@ -1,0 +1,54 @@
+.footer {
+  background: var(--lighter);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-1);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--light);
+  }
+
+  @media only screen and (max-width: 560px) {
+    margin-top: var(--spacing-1);
+  }
+
+  @media (max-width: 560px) {
+    ul {
+      display: none;
+    }
+  }
+
+  a {
+    color: var(--dark);
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--secondary);
+    }
+  }
+  @media (max-width: 630px) {
+    padding: 1rem 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    a {
+      margin: 0 var(--spacing-1);
+      font-size: var(--font-size-2);
+    }
+  }
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    color: inherit;
+    display: inline-block;
+    & > :global(svg) {
+      fill: currentColor;
+    }
+  }
+}
