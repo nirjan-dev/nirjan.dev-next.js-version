@@ -3,17 +3,17 @@
   margin: 0 auto;
   padding: 0 1rem;
 
-  &.narrow {
+  &.isNarrow {
     width: 100%;
     max-width: 800px;
   }
 
-  &.flex {
+  &.isFlex {
     display: flex;
   }
   @media (min-width: 90em) {
     max-width: 1600px;
-    &.narrow {
+    &.isNarrow {
       max-width: 960px;
     }
   }

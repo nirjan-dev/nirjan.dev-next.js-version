@@ -1,0 +1,39 @@
+.posts {
+  max-width: 60ch;
+  margin: 0 auto;
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__listItem {
+    margin: 2rem 0;
+  }
+  &__title {
+    max-width: 25ch;
+    transition: color 200ms ease-in;
+    color: var(--primary-dark);
+
+    font-size: var(--font-size-4);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--primary-light);
+    }
+
+    @media (max-width: 680px) {
+      font-size: var(--font-size-3);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--secondary);
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+  &__date {
+    color: var(--dark);
+    margin: var(--spacing-0) 0;
+    display: block;
+  }
+}

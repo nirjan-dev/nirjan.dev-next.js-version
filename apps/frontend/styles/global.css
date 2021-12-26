@@ -141,14 +141,16 @@
     line-height: var(--body-line-height);
     background-color: var(--lightest);
     color: var(--dark);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  
     font-variation-settings: 'CASL' 0;
     background-image: url('/img/noise.png');
   }
-  
-  body > main {
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #__next > main {
     flex: 1;
   }
   h1,

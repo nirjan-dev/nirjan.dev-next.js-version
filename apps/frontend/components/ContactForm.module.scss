@@ -1,0 +1,98 @@
+.isInvisible {
+  visibility: hidden;
+}
+
+// used to avoid layout shift
+.gridWrapper {
+  display: grid;
+  &__item {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.formStatus {
+  &__msg {
+    text-align: center;
+    font-weight: bold;
+    font-size: 130%;
+    color: var(--dark);
+    margin: 2rem 0 4rem;
+  }
+  &__img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    max-height: 25vh;
+  }
+}
+
+.form {
+  &__group {
+    position: relative;
+    margin: var(--spacing-2) 0;
+  }
+  &__errorMsg {
+    color: var(--danger);
+    min-height: 1.2rem;
+    margin: 0;
+  }
+  &__field {
+    outline: none;
+    border: 2px solid var(--primary);
+    border-radius: var(--border-radius-normal);
+    display: block;
+    width: 100%;
+    padding: var(--spacing-0);
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--lighter);
+      color: var(--darkest);
+      border-color: var(--dark);
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: var(--primary-darker);
+      border-width: 3px;
+      background: var(--lighter);
+
+      @media (prefers-color-scheme: dark) {
+        border-color: var(--primary-dark);
+        background: var(--lightest);
+      }
+    }
+
+    &.hasError {
+      border-color: var(--danger);
+    }
+  }
+  &__label {
+    display: block;
+  }
+  &__field {
+    &.withMinHeight {
+      min-height: 10rem;
+    }
+  }
+  &__actionBtn {
+    background: var(--secondary-dark);
+    border: none;
+    padding: var(--spacing-0) var(--spacing-1);
+    color: var(--lightest);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-DEFAULT);
+    transition: transform 200ms cubic-bezier(0.08, 0.82, 0.17, 1),
+      box-shadow linear 150ms;
+    display: inline-block;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: var(--box-shadow-lg);
+      transform: scale(1.025) translateY(-2px);
+      color: var(--lightest);
+    }
+  }
+}
