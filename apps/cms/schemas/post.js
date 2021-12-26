@@ -23,6 +23,16 @@ export default {
       type: "text",
     },
     {
+      name: "seoTitle",
+      title: "SEO Title",
+      type: "string",
+    },
+    {
+      name: "seoDescription",
+      title: "SEO Description",
+      type: "text",
+    },
+    {
       name: "author",
       title: "Author",
       type: "reference",
