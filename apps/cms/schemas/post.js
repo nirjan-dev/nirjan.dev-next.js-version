@@ -1,12 +1,3 @@
-import React from "react";
-import { MediaEditor } from "sanity-plugin-asset-source-ogimage";
-
-// taken from the layout we built above
-import { blogPostInstagramLayout } from "../components/ogMediaLayout";
-
-import DefaultSource from "part:@sanity/form-builder/input/image/asset-source-default";
-// And let's pretend we have another layout
-import { blogPostOgImageLayout } from "../components/ogMediaLayout";
 export default {
   name: "post",
   title: "Post",
@@ -53,26 +44,6 @@ export default {
       type: "image",
       options: {
         hotspot: true,
-        sources: [
-          DefaultSource,
-          {
-            name: "sharing-image",
-            title: "Generate sharing image",
-            component: (props) => (
-              <MediaEditor
-                // It's vital to forward props to MediaEditor
-                {...props}
-                // Our custom layouts
-                layouts={[blogPostOgImageLayout]}
-                // See dialog section below
-                dialog={{
-                  title: "Create sharing image",
-                }}
-              />
-            ),
-            icon: () => <div>🎨</div>,
-          },
-        ],
       },
     },
 
@@ -82,26 +53,6 @@ export default {
       type: "image",
       options: {
         hotspot: true,
-        sources: [
-          DefaultSource,
-          {
-            name: "sharing-image",
-            title: "Generate sharing image",
-            component: (props) => (
-              <MediaEditor
-                // It's vital to forward props to MediaEditor
-                {...props}
-                // Our custom layouts
-                layouts={[blogPostInstagramLayout]}
-                // See dialog section below
-                dialog={{
-                  title: "Create sharing image",
-                }}
-              />
-            ),
-            icon: () => <div>🎨</div>,
-          },
-        ],
       },
     },
     {
@@ -116,9 +67,14 @@ export default {
       type: "datetime",
     },
     {
+      name: "updatedAt",
+      title: "Updated at",
+      type: "datetime",
+    },
+    {
       name: "body",
       title: "Body",
-      type: "blockContent",
+      type: "postPortableText",
     },
   ],
 

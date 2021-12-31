@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.23.2",
+    "@sanity/code-input": "^2.23.2",
     "@sanity/components": "^2.14.0",
     "@sanity/core": "^2.23.2",
     "@sanity/default-layout": "^2.23.2",
@@ -25,6 +26,7 @@
     "react": "^17.0",
     "react-dom": "^17.0",
     "sanity-plugin-asset-source-ogimage": "^1.0.6",
+    "sanity-plugin-media": "^1.4.4",
     "styled-components": "^5.2.0"
   }
 }
