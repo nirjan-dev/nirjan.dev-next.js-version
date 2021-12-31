@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    Tahoma, sans-serif;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25)) repeat scroll
+    0% 0%;
+}
+
+.textContainer {
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, rgb(106, 48, 147), rgb(160, 68, 255)) repeat
+    scroll 0% 0%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.textContainer h1 {
+  font-size: 2.8rem;
+}
+
+.textContainer h2 {
+  font-size: 4.5rem;
+  max-width: 90%;
+  line-height: 1;
+  margin: 0.5em 0px;
+}
+
+.category {
+  background: rgb(242, 242, 242) none repeat scroll 0% 0%;
+  opacity: 0.85;
+  color: rgb(14, 14, 14);
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.2em 0.5em;
+  border-radius: 20px;
+  font-size: 1.4rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3em;
+}
+
+.author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.author span {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
