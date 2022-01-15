@@ -74,6 +74,8 @@
     --font-size-7: 7.9rem;
   
     /* spacing */
+    --spacing-02: 0.2rem;
+    --spacing-05: 0.5rem;
     --spacing-0: 0.7rem;
     --spacing-1: 1.2rem;
     --spacing-2: 1.9rem;

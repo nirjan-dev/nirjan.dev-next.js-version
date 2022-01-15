@@ -32,8 +32,28 @@
     color: inherit;
   }
   &__date {
-    color: var(--dark);
+    margin-right: var(--spacing-0);
+    display: inline-block;
+  }
+
+  &__meta {
     margin: var(--spacing-0) 0;
-    display: block;
+  }
+
+  &__category {
+    color: var(--dark);
+    background-color: var(--secondary);
+    padding: var(--spacing-02) var(--spacing-0);
+    border-radius: var(--border-radius-normal);
+    display: inline-block;
+    margin-right: var(--spacing-0);
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--secondary);
+      background-color: var(--dark);
+    }
   }
 }

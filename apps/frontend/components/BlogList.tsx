@@ -3,23 +3,42 @@ import { DateFormatter } from "../utils/dateFormatter";
 import styles from "./BlogList.module.scss";
 export interface BlogListItem {
   title: string;
-  date: string;
+  publishedAt: string;
   excerpt: string;
   slug: string;
+  categories: { title: string; slug: string }[];
 }
 
-const BlogListItem = ({ title, date, excerpt, slug }: BlogListItem) => {
+const BlogListItem = ({
+  title,
+  publishedAt,
+  categories,
+  excerpt,
+  slug,
+}: BlogListItem) => {
   return (
     <li className={styles.posts__listItem}>
       <h2 className={styles.posts__title}>
-        <Link passHref href={`/${slug}`}>
-          <a className={styles.posts__link} href={slug}>
-            {title}
-          </a>
+        <Link passHref href={`/blog/${slug}`}>
+          <a className={styles.posts__link}>{title}</a>
         </Link>
       </h2>
-      <p>
-        <small className={styles.posts__date}>{DateFormatter(date)} </small>
+      <p className={styles.posts__meta}>
+        <small className={styles.posts__date}>
+          {DateFormatter(publishedAt)}{" "}
+        </small>
+
+        {categories.map((category) => {
+          return (
+            <Link
+              key={category.title}
+              passHref
+              href={`/category/${category.slug}`}
+            >
+              <a className={styles.posts__category}>{category.title}</a>
+            </Link>
+          );
+        })}
       </p>
       <p className={styles.posts__excerpt}>{excerpt}</p>
     </li>
