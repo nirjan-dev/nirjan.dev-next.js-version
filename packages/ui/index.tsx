@@ -4,3 +4,6 @@ export * from "./Footer";
 export * from "./Banner";
 export * from "./Container";
 export * from "./Spinner";
+export * from "./Toc";
+export * from "./SanityImage";
+export * from "./CodeBlock";

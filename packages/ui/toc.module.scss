@@ -1,0 +1,115 @@
+.toc {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 130px;
+  float: left;
+  padding: var(--spacing-0);
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__link {
+    display: block;
+    color: var(--gray);
+    transition: color 0.6s ease-in-out;
+    max-width: 20ch;
+    padding: var(--spacing-02);
+    opacity: 0.8;
+    transition: color 0.3s linear, opacity 0.3s linear;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--dark);
+    }
+
+    :hover {
+      color: var(--primary-dark);
+      opacity: 1;
+      font-weight: bold;
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--primary-dark);
+      }
+    }
+  }
+
+  &__list {
+    margin-left: var(--spacing-05);
+    transform-origin: 50% 0;
+    padding-left: var(--spacing-05);
+  }
+
+  &__list_item {
+    list-style: none;
+    display: block;
+  }
+
+  &__button {
+    width: 100%;
+    padding: var(--spacing-0);
+    background-color: var(--primary);
+    color: var(--lightest);
+    display: none;
+    border: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--darkest);
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    float: none;
+    border-right: none;
+    border-radius: var(--border-radius-normal);
+    margin-bottom: var(--spacing-1);
+
+    z-index: var(--z-index-toc);
+    bottom: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+    top: auto;
+    position: fixed;
+    // position: fixed;
+    width: 100%;
+    &__button {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: fixed;
+      bottom: var(--spacing-6);
+      font-size: var(--font-size-3);
+      right: var(--spacing-1);
+      box-shadow: var(--box-shadow-lg);
+    }
+
+    &__header {
+      display: none;
+    }
+
+    &__list {
+      background-color: var(--light);
+
+      display: none;
+      // transform: translateY(-110%);
+      padding: var(--spacing-0);
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+// boost specificity for article overrides
+
+.toc .toc__link {
+  text-decoration: none;
+}
+
+.toc .toc__header {
+  font-size: var(--font-size-2);
+  text-align: center;
+}

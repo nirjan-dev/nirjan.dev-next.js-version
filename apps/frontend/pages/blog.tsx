@@ -5,14 +5,14 @@ import Layout from "../components/Layout";
 import { sanityClient } from "lib/sanity.server";
 
 const postListQuery = groq`
-  *[_type == "post"] {
+  *[_type == "post" && !(_id in path("drafts.**"))] {
     title,
     categories[]->{
       title
     },
     excerpt,
     publishedAt,
-    "slug": slug.current,
+    "slug": slug.current
   }
 `;
 

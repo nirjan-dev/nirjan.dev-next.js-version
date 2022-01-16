@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./SubMenu.module.scss";
+import { FaLink } from "react-icons/fa";
 import {
   IoLogoCodepen,
   IoLogoTwitter,
@@ -70,8 +71,11 @@ export const SubMenu: React.FC<{ socialMenuItems: SocialMenuItem[] }> = ({
         aria-expanded={isMenuOpen}
         aria-controls="subMenu"
       >
-        <i className={styles.ggMenu} />
-        <span className={styles.menuBtn__text}>Menu</span>
+        {/* <i className={styles.ggMenu} /> */}
+        <span className={styles.icon} aria-hidden="true">
+          <FaLink />
+        </span>
+        <span className={styles.menuBtn__text}>Social</span>
       </button>
 
       <ul
