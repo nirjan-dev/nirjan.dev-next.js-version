@@ -67,7 +67,6 @@ export default function ContactForm() {
       ...contactForm,
       [event.target.name]: event.target.value,
     });
-    console.log({ contactForm });
   };
 
   const handleSubmit = (event) => {

@@ -17,7 +17,6 @@ const postListQuery = groq`
 `;
 
 export default function Blog({ postList }) {
-  console.log({ postList });
   return (
     <Layout>
       <Banner title="My Blog" />

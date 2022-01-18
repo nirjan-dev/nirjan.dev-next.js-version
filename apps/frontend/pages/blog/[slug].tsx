@@ -4,7 +4,6 @@ import { groq } from "next-sanity";
 import Layout from "../../components/Layout";
 
 export default function BlogPostPage({ post }) {
-  console.log({ post });
   return (
     <Layout>
       <BlogPost post={post} />

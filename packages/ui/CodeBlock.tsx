@@ -1,6 +1,6 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import NightOwl from "react-syntax-highlighter/dist/esm/styles/hljs/night-owl";
+import NightOwl from "react-syntax-highlighter/dist/cjs/styles/hljs/night-owl";
 
 export const CodeBlock = ({
   node,
