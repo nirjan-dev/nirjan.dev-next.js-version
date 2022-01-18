@@ -7,3 +7,4 @@ export * from "./Spinner";
 export * from "./Toc";
 export * from "./SanityImage";
 export * from "./CodeBlock";
+export * from "./ShareLinks";

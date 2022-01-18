@@ -1,0 +1,64 @@
+.share_links {
+  margin: var(--spacing-3) 0 var(--spacing-1);
+
+  @media (min-width: 480px) {
+    * + * {
+      margin-left: var(--spacing-1);
+    }
+  }
+}
+
+.social_btn {
+  background: transparent;
+  border: 3px solid;
+  border-color: var(--dark);
+  padding: var(--spacing-0) var(--spacing-1);
+  display: inline-block;
+  color: var(--darkest);
+  border-radius: var(--border-radius-normal);
+  margin-bottom: var(--spacing-0);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
+  &__twitter {
+    border-color: hsl(202.8, 80.1%, 53.1%);
+
+    .icon {
+      color: hsl(202.8, 80.1%, 53.1%);
+    }
+  }
+
+  &__facebook {
+    border-color: hsl(221, 61%, 60%);
+    .icon {
+      color: hsl(221, 61%, 60%);
+    }
+  }
+  .icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-left: 0.2em;
+    & > :global(svg) {
+      fill: currentColor;
+    }
+  }
+}
+
+.share_links .social_btn {
+  text-decoration: none;
+}
