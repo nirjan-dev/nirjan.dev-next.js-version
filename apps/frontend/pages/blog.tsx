@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { sanityClient } from "lib/sanity.server";
 
 const postListQuery = groq`
-  *[_type == "post" && !(_id in path("drafts.**"))] {
+  *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
     title,
     categories[]->{
       title

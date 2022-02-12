@@ -50,6 +50,7 @@
   }
 
   &__link {
+    text-decoration: none;
     color: var(--dark);
     transition: color 100ms linear;
     display: inline-block;

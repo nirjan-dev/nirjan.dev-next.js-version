@@ -4,37 +4,11 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 560px) {
-    padding-top: 0;
-  }
-  a:not(.contactBtn) {
-    border-bottom: 3px solid currentColor;
-  }
-  &__subTitle,
   &__title {
-    max-width: 50ch;
-    margin-bottom: var(--spacing-2);
-    font-size: var(--font-size-2);
-    color: var(--darker);
-    font-weight: var(--regular-font-weight);
-    font-family: var(--body-font-family);
-    font-variation-settings: "CASL" 0.4;
-    line-height: var(--body-line-height);
-
-    @media (max-width: 680px) {
-      font-size: var(--font-size-2);
-    }
-  }
-
-  :global(.newsletterform-component) {
-    margin-top: var(--spacing-3);
-  }
-
-  &__titleIntro {
     font-size: var(--font-size-6);
     display: block;
     color: var(--primary-dark);
-    margin-bottom: var(--spacing-2);
+    margin: var(--spacing-2) 0;
     font-family: var(--heading-font-family);
     font-weight: var(--black-font-weight);
     font-variation-settings: "CASL" 1;
@@ -43,9 +17,48 @@
       color: var(--primary-light);
     }
 
+    @media (max-width: 1230px) {
+      font-size: var(--font-size-5);
+    }
+
     @media (max-width: 680px) {
       font-size: var(--font-size-4);
     }
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 0;
+  }
+
+  &__subTitle {
+    max-width: 50ch;
+    margin-bottom: var(--spacing-2);
+    font-size: var(--font-size-3);
+    color: var(--darker);
+    font-weight: var(--regular-font-weight);
+    font-family: var(--body-font-family);
+    font-variation-settings: "CASL" 0.4;
+    line-height: var(--body-line-height);
+
+    @media (max-width: 1230px) {
+      font-size: var(--font-size-2);
+    }
+  }
+
+  &__container {
+    display: flex;
+
+    img {
+      object-fit: contain;
+    }
+
+    @media (max-width: 720px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  :global(.newsletterform-component) {
+    margin-top: var(--spacing-3);
   }
 }
 

@@ -29,6 +29,7 @@
     }
   }
   &__link {
+    text-decoration: none;
     color: inherit;
   }
   &__date {
@@ -41,6 +42,7 @@
   }
 
   &__category {
+    text-decoration: none;
     color: var(--dark);
     background-color: var(--secondary);
     padding: var(--spacing-02) var(--spacing-0);
