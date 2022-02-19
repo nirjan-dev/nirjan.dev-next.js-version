@@ -51,7 +51,9 @@ export const BlogPost = ({ post }) => {
     <div className={styles.post}>
       <Banner
         title={post.title}
-        subtitle={`Last updated: ${DateFormatter(post.publishedAt)}`}
+        subtitle={`Last updated: ${DateFormatter(
+          post.updatedAt || post.publishedAt
+        )}`}
       />
 
       <Toc headers={headers} />

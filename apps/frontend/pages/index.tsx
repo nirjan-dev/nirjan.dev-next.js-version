@@ -2,9 +2,43 @@ import { Container } from "ui/Container";
 import Layout from "../components/Layout";
 import styles from "./index.module.scss";
 import Image from "next/image";
+import { NextSeo, SocialProfileJsonLd, WebPageJsonLd } from "next-seo";
+
 export default function Index() {
+  const description =
+    "I make websites and applications that are fast, user friendly and accessible. I work with modern JavaScript, CSS, HTML, Vue, React and Node.js";
+  const title = "Nirjan Khadka | Developer specializing in Web and Mobile App";
+  const url = "https://nirjan.dev";
   return (
     <Layout>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+        }}
+      />
+      <WebPageJsonLd
+        description={description}
+        id="https://nirjan.dev/#webpage"
+        reviewedBy={{
+          type: "Person",
+          name: "Nirjan Khadka",
+        }}
+      />
+      <SocialProfileJsonLd
+        type="Person"
+        name="Nirjan Khadka"
+        url={url}
+        sameAs={[
+          "https://www.instagram.com/nirjan.dev",
+          "https://www.linkedin.com/nirjankhadka",
+          "https://twitter.com/nirjan.dev",
+          "https://codepen.io/nk13_codes",
+          "https://github.com/NK-WebDev",
+        ]}
+      />
       <div className={styles.introBanner}>
         <Container>
           <div className={styles.introBanner__container}>
