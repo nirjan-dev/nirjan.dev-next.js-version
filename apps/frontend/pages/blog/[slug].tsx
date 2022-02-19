@@ -6,8 +6,8 @@ import { NextSeo, WebPageJsonLd, ArticleJsonLd } from "next-seo";
 import Layout from "../../components/Layout";
 
 export default function BlogPostPage({ post }) {
-  const title = post.seoTitle;
-  const description = post.seoDescription;
+  const title = post?.seoTitle;
+  const description = post?.seoDescription;
   const url = `https://nirjan.dev/blog/${post.slug}`;
   const image = urlFor(post.mainImage).width(1200).height(630).url();
   return (
@@ -77,11 +77,11 @@ export async function getStaticProps({ params, preview = false }) {
 
 export async function getStaticPaths() {
   const paths = await sanityClient.fetch(
-    groq`*[_type == "post" && defined(slug.current)][].slug.current`
+    groq`*[_type == "post" && defined(slug.current) && !(_id in path("drafts.**"))][].slug.current`
   );
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
-    fallback: true,
+    fallback: false,
   };
 }

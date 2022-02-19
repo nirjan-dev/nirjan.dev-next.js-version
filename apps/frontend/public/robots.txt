@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nirjan.dev
+
+# Sitemaps
+Sitemap: https://nirjan.dev/sitemap.xml

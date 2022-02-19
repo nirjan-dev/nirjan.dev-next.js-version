@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import { NextSeo, SocialProfileJsonLd, WebPageJsonLd } from "next-seo";
+import Link from "next/link";
 
 export default function Index() {
   const description =
@@ -43,12 +44,14 @@ export default function Index() {
         <Container>
           <div className={styles.introBanner__container}>
             <div>
-              <h1 className={styles.introBanner__title}>Hi, I'm Nirjan.</h1>
+              <h1 className={styles.introBanner__title}>
+                Hi, I&apos;m Nirjan.
+              </h1>
               <h2 className={styles.introBanner__subTitle}>
                 I build websites and apps that are fast, user friendly, and
-                accessible. I also love sharing stuff that I'm learning and
+                accessible. I also love sharing stuff that I&apos;m learning and
                 building through my &nbsp;
-                <a href="/blog">blog</a>, &nbsp;
+                <Link href="/blog">blog</Link>, &nbsp;
                 <a
                   href="https://twitter.com/nirjan_dev"
                   target="_blank"

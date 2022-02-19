@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 import { Banner, Container } from "ui";
-import { BlogList, BlogListItem } from "../components/BlogList";
-import Layout from "../components/Layout";
+import { BlogList, BlogListItem } from "../../components/BlogList";
+import Layout from "../../components/Layout";
 import { sanityClient } from "lib/sanity.server";
 import { ArticleJsonLd, NextSeo, WebPageJsonLd } from "next-seo";
 
