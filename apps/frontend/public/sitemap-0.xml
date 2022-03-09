@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://nirjan.dev</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/understanding-this-in-javascript</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
-<url><loc>https://nirjan.dev/blog/tips-for-beginners-learning-to-code</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-19T06:42:53.693Z</lastmod></url>
+<url><loc>https://nirjan.dev</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/understanding-this-in-javascript</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/tips-for-beginners-learning-to-code</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-03-09T02:53:30.842Z</lastmod></url>
 </urlset>

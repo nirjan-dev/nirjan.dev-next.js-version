@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Spinner } from "ui";
 import isEmail from "validator/lib/isEmail";
-//   import Spinner from './spinner.svelte';
+import Image from "next/image";
 
 import styles from "./ContactForm.module.scss";
 
@@ -107,7 +107,7 @@ export default function ContactForm() {
           <p className={styles.formStatus__msg}>
             ✔ Message Sent successfully....
           </p>
-          <img
+          <Image
             className={styles.formStatus__img}
             src="/img/mail_sent.svg"
             alt=""

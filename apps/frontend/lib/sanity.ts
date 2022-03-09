@@ -18,9 +18,6 @@ import BlockContent from "@sanity/block-content-to-react/lib/BlockContent";
  **/
 export const urlFor = (source) => createImageUrlBuilder(config).image(source);
 
-// Set up the live preview subscription hook
-// export const usePreviewSubscription = createPreviewSubscriptionHook(config);
-
 const BlockRenderer = (props) => {
   const { style = "normal" } = props.node;
 
@@ -53,3 +50,7 @@ export const PortableText = createPortableTextComponent({
 
 // Helper function for using the current logged in user account
 export const useCurrentUser = createCurrentUserHook(config);
+
+// Set up the live preview subscription hook
+export const usePreviewSubscription: any =
+  createPreviewSubscriptionHook(config);

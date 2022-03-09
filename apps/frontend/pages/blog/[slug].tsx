@@ -1,17 +1,53 @@
 import { BlogPost } from "components/BlogPost";
-import { urlFor } from "lib/sanity";
-import { sanityClient } from "lib/sanity.server";
+import { urlFor, usePreviewSubscription } from "lib/sanity";
+import { getClient, sanityClient } from "lib/sanity.server";
 import { groq } from "next-sanity";
 import { NextSeo, WebPageJsonLd, ArticleJsonLd } from "next-seo";
 import Layout from "../../components/Layout";
 
-export default function BlogPostPage({ post }) {
+/**
+ * Helper function to return the correct version of the document
+ * If we're in "preview mode" and have multiple documents, return the draft
+ */
+function filterDataToSingleItem(data, preview) {
+  if (!Array.isArray(data)) {
+    return data;
+  }
+
+  if (data.length === 1) {
+    return data[0];
+  }
+
+  if (preview) {
+    return data.find((item) => item._id.startsWith(`drafts.`)) || data[0];
+  }
+
+  return data[0];
+}
+
+export default function BlogPostPage({ data, preview }) {
+  const { data: previewData } = usePreviewSubscription(data?.query, {
+    params: data?.queryParams ?? {},
+    // The hook will return this on first render
+    // This is why it's important to fetch *draft* content server-side!
+    initialData: data?.page,
+    // The passed-down preview context determines whether this function does anything
+    enabled: preview,
+  });
+
+  // Client-side uses the same query, so we may need to filter it down again
+  const post = filterDataToSingleItem(previewData, preview);
+
   const title = post?.seoTitle;
   const description = post?.seoDescription;
-  const url = `https://nirjan.dev/blog/${post.slug}`;
-  const image = urlFor(post.mainImage).width(1200).height(630).url();
-  return (
-    <Layout>
+  const url = `https://nirjan.dev/blog/${post?.slug}`;
+  const publishedDate = post?.publishedAt;
+  const modifiedDate = post?.updatedAt ?? publishedDate;
+  const image =
+    post?.mainImage && urlFor(post.mainImage).width(1200).height(630).url();
+
+  const postComponents = (
+    <>
       <NextSeo
         title={title}
         description={description}
@@ -37,18 +73,20 @@ export default function BlogPostPage({ post }) {
         url="https://nirjan.dev/blog"
         title={title}
         images={[image]}
-        datePublished={post.publishedAt}
-        dateModified={post.updatedAt || post.publishedAt}
+        datePublished={publishedDate}
+        dateModified={modifiedDate}
         authorName="Nirjan Khadka"
         description={description}
       />
+
       <BlogPost post={post} />
-    </Layout>
+    </>
   );
+  return <Layout>{post && postComponents}</Layout>;
 }
 
 const postQuery = groq`
-  *[_type == "post" && slug.current == $slug && !(_id in path("drafts.**"))][0]{
+  *[_type == "post" && slug.current == $slug]{
     title,
     categories[]->{
       title,
@@ -64,13 +102,20 @@ const postQuery = groq`
   }`;
 
 export async function getStaticProps({ params, preview = false }) {
-  const post = await sanityClient.fetch(postQuery, {
+  const data = await getClient(preview).fetch(postQuery, {
     slug: params.slug,
   });
 
+  const queryParams = { slug: params.slug };
+
+  if (!data) return { notFound: true };
+
+  const page = filterDataToSingleItem(data, preview);
+
   return {
     props: {
-      post,
+      data: { page: page ?? null, query: postQuery, queryParams },
+      preview,
     },
   };
 }
@@ -82,6 +127,6 @@ export async function getStaticPaths() {
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
-    fallback: false,
+    fallback: true,
   };
 }

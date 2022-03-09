@@ -9,7 +9,8 @@ export const BlogPost = ({ post }) => {
   const comments = useRef();
 
   useEffect(() => {
-    if (comments.current) {
+    const commentsContainer = comments?.current;
+    if (commentsContainer) {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
       script.setAttribute("repo", "nirjan-dev/site-comments");
@@ -18,14 +19,14 @@ export const BlogPost = ({ post }) => {
       script.setAttribute("crossorigin", "anonymous");
       script.setAttribute("async", "");
       script.setAttribute("id", "utterances");
-      (comments.current as any).appendChild(script);
+      (commentsContainer as any).appendChild(script);
     }
 
     return () => {
-      if (comments.current) {
+      if (commentsContainer) {
         const script = document.getElementById("utterances");
         if (script) {
-          (comments.current as any).removeChild(script);
+          (commentsContainer as any).removeChild(script);
         }
       }
     };
