@@ -9,7 +9,8 @@ const postListQuery = groq`
   *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
     title,
     categories[]->{
-      title
+      title,
+      'slug': slug.current
     },
     excerpt,
     publishedAt,

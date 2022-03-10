@@ -28,17 +28,18 @@ const BlogListItem = ({
           {DateFormatter(publishedAt)}{" "}
         </small>
 
-        {categories.map((category) => {
-          return (
-            <Link
-              key={category.title}
-              passHref
-              href={`/category/${category.slug}`}
-            >
-              <a className={styles.posts__category}>{category.title}</a>
-            </Link>
-          );
-        })}
+        {categories &&
+          categories.map((category) => {
+            return (
+              <Link
+                key={category.title}
+                passHref
+                href={`/category/${category.slug}`}
+              >
+                <a className={styles.posts__category}>{category.title}</a>
+              </Link>
+            );
+          })}
       </p>
       <p className={styles.posts__excerpt}>{excerpt}</p>
     </li>

@@ -7,11 +7,13 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "slug",
       title: "Slug",
       type: "slug",
+      validation: (Rule) => Rule.required(),
       options: {
         source: "title",
         maxLength: 96,
@@ -37,6 +39,7 @@ export default {
       title: "Author",
       type: "reference",
       to: { type: "author" },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "mainImage",
@@ -45,26 +48,20 @@ export default {
       options: {
         hotspot: true,
       },
-    },
-
-    {
-      name: "instaImage",
-      title: "Instagram image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "categories",
       title: "Categories",
       type: "array",
+      validation: (Rule) => Rule.required(),
       of: [{ type: "reference", to: { type: "category" } }],
     },
     {
       name: "publishedAt",
       title: "Published at",
       type: "datetime",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "updatedAt",
@@ -74,6 +71,7 @@ export default {
     {
       name: "body",
       title: "Body",
+      validation: (Rule) => Rule.required(),
       type: "postPortableText",
     },
   ],

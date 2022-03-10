@@ -25,4 +25,7 @@ export const getDefaultDocumentNode = () => {
 export default () =>
   S.list()
     .title("Content")
-    .items([S.documentTypeListItem("post")]);
+    .items([
+      S.documentTypeListItem("post"),
+      S.documentTypeListItem("category"),
+    ]);
