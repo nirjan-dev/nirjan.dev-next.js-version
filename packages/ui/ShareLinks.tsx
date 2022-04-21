@@ -23,20 +23,6 @@ export const ShareLinks = ({
         </span>
       </a>
       <a
-        className={`${styles.social_btn} ${styles.social_btn__twitter}`}
-        href={`https://twitter.com/search?q=${encodeURIComponent(
-          "https://nirjan.dev/" + slug
-        )}`}
-        target="_blank"
-        aria-label="discuss on twitter"
-        rel="noopener noreferrer"
-      >
-        Discuss
-        <span className={styles.icon} aria-hidden="true">
-          <IoLogoTwitter />
-        </span>
-      </a>
-      <a
         className={`${styles.social_btn} ${styles.social_btn__facebook}`}
         href={`https://facebook.com/sharer/sharer.php?u=https://nirjan.dev/${slug}`}
         target="_blank"
