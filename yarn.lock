@@ -2124,6 +2124,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/headroom.js@^0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@types/headroom.js/-/headroom.js-0.12.2.tgz#a8bd6a88413db9afab653605f2bcd6b39f681f8c"
+  integrity sha512-dsor/R8cScrFMYfOeZHvRzemQdorA02OBS2ROVPkpCzMovsiws96mMIxOtGpFgme9QrL7zOOBfRosg6lHwg2vg==
+
 "@types/is-hotkey@^0.1.1":
   version "0.1.7"
   resolved "https://registry.npmjs.org/@types/is-hotkey/-/is-hotkey-0.1.7.tgz#30ec6d4234895230b576728ef77e70a52962f3b3"
@@ -8497,7 +8502,7 @@ queue@6.0.2:
   dependencies:
     inherits "~2.0.3"
 
-raf@^3.4.1:
+raf@^3.3.0, raf@^3.4.1:
   version "3.4.1"
   resolved "https://registry.npmjs.org/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   dependencies:
@@ -8610,6 +8615,15 @@ react-focus-lock@^2.5.0:
     react-clientside-effect "^1.2.5"
     use-callback-ref "^1.2.5"
     use-sidecar "^1.0.5"
+
+react-headroom@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-headroom/-/react-headroom-3.2.0.tgz#ff14d01343b850d02bf30624bfa2c7ed60c75558"
+  integrity sha512-8rbXBKN187DnPg8lyJa5IKZx9rA1DbkvO4X0F6A6lSGr54fr7CHphF84fxwlPbX93Uqs9daFt9q0j3fhC7RTEg==
+  dependencies:
+    prop-types "^15.5.8"
+    raf "^3.3.0"
+    shallowequal "^1.1.0"
 
 react-hook-form@6.15.1:
   version "6.15.1"

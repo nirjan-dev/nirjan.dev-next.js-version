@@ -109,6 +109,7 @@ export default function ContactForm() {
           </p>
           <Image
             className={styles.formStatus__img}
+            layout="fill"
             src="/img/mail_sent.svg"
             alt=""
           />

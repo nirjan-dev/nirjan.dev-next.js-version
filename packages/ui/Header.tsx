@@ -2,6 +2,8 @@ import { Navbar } from "./Navbar";
 import { NavBrand } from "./NavBrand";
 import styles from "./Header.module.scss";
 import { SocialMenuItem } from "./SubMenu";
+import Headroom from "react-headroom";
+import "./Headroom.scss";
 
 const navItems = [
   {
@@ -29,9 +31,23 @@ export const Header = ({
   socialMenuItems: SocialMenuItem[];
 }) => {
   return (
-    <header className={styles.header}>
-      <NavBrand logo={logo} />
-      <Navbar navItems={navItems} socialMenuItems={socialMenuItems} />
-    </header>
+    <>
+      <div
+        style={{
+          position: "absolute",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <NavBrand logo={logo} />
+      </div>
+
+      <Headroom disableInlineStyles={true}>
+        <header className={styles.header}>
+          <NavBrand logo={logo} />
+          <Navbar navItems={navItems} socialMenuItems={socialMenuItems} />
+        </header>
+      </Headroom>
+    </>
   );
 };
