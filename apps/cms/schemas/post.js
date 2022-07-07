@@ -35,6 +35,16 @@ export default {
       type: "text",
     },
     {
+      name: "seoKeywords",
+      title: "SEO Keywords",
+      type: "string",
+    },
+    {
+      name: "seoSynonyms",
+      title: "SEO Synonyms",
+      type: "string",
+    },
+    {
       name: "author",
       title: "Author",
       type: "reference",

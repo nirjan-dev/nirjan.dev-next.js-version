@@ -13,6 +13,5 @@ export default function resolveProductionUrl(doc) {
   previewUrl.pathname = `/api/preview`;
   previewUrl.searchParams.append(`secret`, previewSecret);
   previewUrl.searchParams.append(`slug`, `blog/${doc?.slug?.current}` ?? `/`);
-
   return previewUrl.toString();
 }

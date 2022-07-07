@@ -88,6 +88,7 @@ export default function BlogPostPage({ data, preview }) {
 const postQuery = groq`
   *[_type == "post" && slug.current == $slug]{
     title,
+    _id,
     categories[]->{
       title,
     },

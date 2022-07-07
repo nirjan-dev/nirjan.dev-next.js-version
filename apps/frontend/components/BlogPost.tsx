@@ -49,7 +49,7 @@ export const BlogPost = ({ post }) => {
     });
 
   return (
-    <div className={styles.post}>
+    <div className={styles.post} data-content="main">
       <Banner
         title={post.title}
         subtitle={`Last updated: ${DateFormatter(

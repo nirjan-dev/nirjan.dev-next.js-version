@@ -16,7 +16,8 @@
     "@sanity/code-input",
     "media",
     "@sanity/production-preview",
-    "iframe-pane"
+    "iframe-pane",
+    "seo-pane"
   ],
   "env": {
     "development": {
