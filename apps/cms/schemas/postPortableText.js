@@ -1,3 +1,15 @@
+import React from "react";
+
+const InternalLinkRenderer = (props) => (
+  <a
+    style={{
+      color: "green",
+    }}
+  >
+    {props.children}
+  </a>
+);
+
 export default {
   name: "postPortableText",
   type: "array",
@@ -5,6 +17,66 @@ export default {
   of: [
     {
       type: "block",
+      marks: {
+        annotations: [
+          {
+            name: "link",
+            type: "object",
+            title: "External link",
+            options: {
+              modal: {
+                width: "medium",
+              },
+            },
+
+            fields: [
+              {
+                name: "href",
+                type: "url",
+                title: "URL",
+              },
+              {
+                title: "Open in new tab?",
+                name: "blank",
+                type: "boolean",
+                default: true,
+              },
+            ],
+          },
+          {
+            name: "internalLink",
+            type: "object",
+            title: "Internal link to other article",
+            blockEditor: {
+              render: InternalLinkRenderer,
+            },
+            options: {
+              modal: {
+                type: "dialog",
+                width: "large",
+              },
+            },
+            fields: [
+              {
+                type: "reference",
+                title: "Post",
+                name: "post",
+                to: [{ type: "post" }],
+                validation: (Rule) =>
+                  Rule.required().warning(
+                    "Post field cannot be empty in internal link"
+                  ),
+              },
+              {
+                title: "Open in new tab ?",
+                name: "blank",
+                type: "boolean",
+                default: true,
+              },
+            ],
+          },
+        ],
+      },
     },
     {
       type: "image",

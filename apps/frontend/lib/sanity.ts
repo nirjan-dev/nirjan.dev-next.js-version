@@ -1,3 +1,5 @@
+import { externalLink } from "./serializers/externalLink";
+import { internalLink } from "./serializers/internalLink";
 import { CodeBlock, SanityImage } from "ui";
 import slugify from "slugify";
 // lib/sanity.js
@@ -44,6 +46,10 @@ export const PortableText = createPortableTextComponent({
   // Serializers passed to @sanity/block-content-to-react
   // (https://github.com/sanity-io/block-content-to-react)
   serializers: {
+    marks: {
+      internalLink: internalLink,
+      link: externalLink,
+    },
     types: { block: BlockRenderer, image: SanityImage, code: CodeBlock },
   },
 });

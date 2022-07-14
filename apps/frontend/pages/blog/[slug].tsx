@@ -99,7 +99,15 @@ const postQuery = groq`
     updatedAt,
     "slug": slug.current,
     mainImage,
-    body[]
+    body[] {
+      ...,
+      markDefs[]{
+        ...,
+        _type == "internalLink" => {
+          "slug": @.post->slug
+        }
+      }
+    }
   }`;
 
 export async function getStaticProps({ params, preview = false }) {
