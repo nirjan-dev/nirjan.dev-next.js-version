@@ -55,6 +55,7 @@ export const BlogPost = ({ post }) => {
         subtitle={`Last updated: ${DateFormatter(
           post.updatedAt || post.publishedAt
         )}`}
+        categories={post.categories}
       />
 
       <Toc headers={headers} />

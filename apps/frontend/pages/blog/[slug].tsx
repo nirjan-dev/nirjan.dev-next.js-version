@@ -91,6 +91,7 @@ const postQuery = groq`
     _id,
     categories[]->{
       title,
+      "slug": slug.current
     },
     excerpt,
     seoDescription,

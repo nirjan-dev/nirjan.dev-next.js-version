@@ -28,6 +28,24 @@
     margin-top: var(--spacing-1);
   }
 
+  &__category {
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--secondary);
+    padding: var(--spacing-02) var(--spacing-0);
+    border-radius: var(--border-radius-normal);
+    display: inline-block;
+    margin-right: var(--spacing-0);
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--secondary);
+      background-color: var(--dark);
+    }
+  }
+
   @media (max-width: 600px) {
     padding: var(--spacing-3) var(--spacing-1);
   }
