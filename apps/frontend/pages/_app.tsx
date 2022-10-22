@@ -2,6 +2,7 @@ import "../styles/normalize.css";
 import "../styles/global.css";
 import { DefaultSeo } from "next-seo";
 import Script from "next/script";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -24,6 +25,7 @@ export default function MyApp({ Component, pageProps }) {
   `,
         }}
       />
+      <GoogleAnalytics trackPageViews />
       <DefaultSeo
         openGraph={{
           type: "website",
