@@ -1,7 +1,7 @@
 .container {
   max-width: 95%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 var(--spacing-1);
 
   &.isNarrow {
     width: 100%;
@@ -12,6 +12,8 @@
     display: flex;
   }
   @media (min-width: 90em) {
+  padding: 0 var(--spacing-3);
+
     max-width: 1600px;
     &.isNarrow {
       max-width: 960px;

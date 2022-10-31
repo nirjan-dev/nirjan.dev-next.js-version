@@ -79,6 +79,11 @@ export default {
       type: "datetime",
     },
     {
+      name: "featured",
+      title: "Featured",
+      type: "boolean",
+    },
+    {
       name: "body",
       title: "Body",
       validation: (Rule) => Rule.required(),

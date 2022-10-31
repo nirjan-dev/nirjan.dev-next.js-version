@@ -55,7 +55,14 @@ export default function Blog({ postList }) {
       />
       <Banner title="My Blog" />
       <Container>
-        <BlogList posts={postList} />
+        <div
+          style={{
+            margin: "0 auto",
+            maxWidth: "60ch",
+          }}
+        >
+          <BlogList posts={postList} />
+        </div>
       </Container>
     </Layout>
   );
