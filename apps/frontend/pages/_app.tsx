@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { DefaultSeo } from "next-seo";
 import Script from "next/script";
 import { GoogleAnalytics } from "nextjs-google-analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -77,6 +78,7 @@ export default function MyApp({ Component, pageProps }) {
         ]}
       />
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
