@@ -1,81 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    <url>
-        <loc>https://nirjan.dev</loc>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/contact</loc>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster</loc>
-        <lastmod>2022-03-25T02:10:53.195Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer</loc>
-        <lastmod>2022-01-08T06:02:18.304Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web</loc>
-        <lastmod>2021-07-15T06:33:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro</loc>
-        <lastmod>2021-06-22T06:09:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/tips-for-beginners-learning-to-code</loc>
-        <lastmod>2020-02-13T06:36:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/understanding-this-in-javascript</loc>
-        <lastmod>2020-01-15T06:20:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</loc>
-        <lastmod>2019-11-21T05:07:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/web-dev</loc>
-        <lastmod>2022-01-08T06:02:18.304Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/design</loc>
-        <lastmod>2021-07-15T06:33:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/accessibility</loc>
-        <lastmod>2021-07-15T06:33:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/management</loc>
-        <lastmod>2022-03-21T02:33:13Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/javascript</loc>
-        <lastmod>2019-11-21T05:07:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/css</loc>
-        <lastmod>2021-07-15T06:33:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/debugging</loc>
-        <lastmod>2022-03-25T02:10:53.195Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/ui</loc>
-        <lastmod>2021-07-15T06:33:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/computer-science</loc>
-        <lastmod>2019-11-21T05:07:00.000Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/category/career-growth</loc>
-        <lastmod>2022-01-08T06:02:18.304Z</lastmod>
-    </url>
-    <url>
-        <loc>https://nirjan.dev/blog</loc>
-        <lastmod>2022-03-25T02:10:53.195Z</lastmod>
-    </url>
+<url><loc>https://nirjan.dev</loc></url>
+<url><loc>https://nirjan.dev/contact</loc></url>
+<url><loc>https://nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster</loc><lastmod>2022-03-25T02:10:53.195Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer</loc><lastmod>2022-01-08T06:02:18.304Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web</loc><lastmod>2021-07-15T06:33:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro</loc><lastmod>2022-11-02T04:20:48.550Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/tips-for-beginners-learning-to-code</loc><lastmod>2020-02-13T06:36:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/understanding-this-in-javascript</loc><lastmod>2022-11-02T03:58:42.289Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</loc><lastmod>2022-08-09T02:26:20.252Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/web-dev</loc><lastmod>2022-01-08T06:02:18.304Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/design</loc><lastmod>2021-07-15T06:33:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/accessibility</loc><lastmod>2021-07-15T06:33:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/management</loc><lastmod>2022-03-21T02:33:13Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/javascript</loc><lastmod>2019-11-21T05:07:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/css</loc><lastmod>2021-07-15T06:33:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/debugging</loc><lastmod>2022-03-25T02:10:53.195Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/ui</loc><lastmod>2021-07-15T06:33:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/computer-science</loc><lastmod>2019-11-21T05:07:00.000Z</lastmod></url>
+<url><loc>https://nirjan.dev/category/career-growth</loc><lastmod>2022-01-08T06:02:18.304Z</lastmod></url>
+<url><loc>https://nirjan.dev/blog</loc><lastmod>2022-03-25T02:10:53.195Z</lastmod></url>
 </urlset>

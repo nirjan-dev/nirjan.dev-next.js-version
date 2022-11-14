@@ -5,6 +5,7 @@ import {
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoInstagram,
+  IoLogoRss,
 } from "react-icons/io";
 import styles from "./Footer.module.scss";
 
@@ -22,6 +23,9 @@ function getSelectedIcon(icon: string) {
       break;
     case "IoLogoInstagram":
       selectedIcon = <IoLogoInstagram />;
+      break;
+    case "IoLogoRss":
+      selectedIcon = <IoLogoRss />;
       break;
     default:
       break;

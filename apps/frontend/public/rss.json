@@ -1,0 +1,59 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Nirjan Khadka's Blog",
+    "home_page_url": "nirjan.dev",
+    "feed_url": "nirjan.dev/rss.json",
+    "description": "I write about different web technologies like HTML, CSS, JavaScript, Svelte, Vue, Storybook, Node.js, SVG, WebGL, web animation and best coding practices.",
+    "icon": "nirjan.dev/logo.png",
+    "items": [
+        {
+            "id": "nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster",
+            "url": "nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster",
+            "title": "11 easy tips to fix bugs and debug your code faster",
+            "summary": "I have a love-hate relationship with coding bugs. I hate finding and debugging them, but I love the moment that I find a fix for it. As my career progresses, I've found some things that I do over and over that help me fix bugs faster. In this post, I'll list the debugging tips that I use the most.",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer",
+            "url": "nirjan.dev/blog/first-remote-job-leading-a-team-learning-seo-or-2021-review-from-a-web-developer",
+            "title": "First remote job, leading a team, learning SEO | 2021 review from a web developer",
+            "summary": "This was a pretty big year for me. While my personal life didn’t change a lot because of the pandemic, my professional life changed quite a lot. I got my first remote role, got involved more in management and met lots of talented people. I don’t remember each moment, but I do have some highlights for the year that I want to go through in this post.",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web",
+            "url": "nirjan.dev/blog/how-to-build-accessible-hidden-navigation-menus-on-the-web",
+            "title": "How to build accessible hidden navigation menus on the web",
+            "summary": "Menus are all over the web, but a lot of them are inaccessible. As the people building the web, we need to make sure that everyone is able to use our sites without a problem. That's why creating accessible menu's should be part of every web developer's toolkit. In this post, I'll show you the CSS, JavaScript, HTML and ARIA attributes that you need to know to create accessible menus.",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro",
+            "url": "nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro",
+            "title": "Step by Step guide to truncating text in CSS; shorten text like a pro",
+            "summary": "In this post, I'll show you how to truncate text in CSS. I will cover how to shorten both single lines and multi-lines. I'll also mention some common problems you may face when truncating text.",
+            "date_modified": "2022-11-02T04:20:48.550Z"
+        },
+        {
+            "id": "nirjan.dev/blog/tips-for-beginners-learning-to-code",
+            "url": "nirjan.dev/blog/tips-for-beginners-learning-to-code",
+            "title": "Tips for beginners learning to code",
+            "summary": "If you're new to coding then these tips might help you out. I've listed some tips that I would have really benefited from when I was learning to code.",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "nirjan.dev/blog/understanding-this-in-javascript",
+            "url": "nirjan.dev/blog/understanding-this-in-javascript",
+            "title": "WTF is this? 4 rules to easily figure out this in javascript",
+            "summary": "If you have ever been confused about the value of this in JavaScript then this guide will help you figure out how you can solve this problem. There's a cheat sheet at the end that can help you quickly figure out the value of this if you want to skip to that.",
+            "date_modified": "2022-11-02T03:58:42.289Z"
+        },
+        {
+            "id": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
+            "url": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
+            "title": "What is a JavaScript closure and JavaScript scope",
+            "summary": "In this post, I explain how a JavaScript closure works and what does JavaScript scope mean. In the end, I will also give some examples of JavaScript Closures in action.",
+            "date_modified": "2022-08-09T02:26:20.252Z"
+        }
+    ]
+}

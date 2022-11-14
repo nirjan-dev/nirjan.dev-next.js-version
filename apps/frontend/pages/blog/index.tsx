@@ -4,6 +4,7 @@ import { BlogList, BlogListItem } from "../../components/BlogList";
 import Layout from "../../components/Layout";
 import { sanityClient } from "lib/sanity.server";
 import { ArticleJsonLd, NextSeo, WebPageJsonLd } from "next-seo";
+import generateRssFeed from "../../utils/generateRSSFeed";
 
 const postListQuery = groq`
   *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
@@ -70,6 +71,7 @@ export default function Blog({ postList }) {
 
 export async function getStaticProps() {
   const postList = await sanityClient.fetch(postListQuery);
+  await generateRssFeed();
 
   return {
     props: {
