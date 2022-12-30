@@ -7,6 +7,13 @@
     "icon": "nirjan.dev/logo.png",
     "items": [
         {
+            "id": "nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review",
+            "url": "nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review",
+            "title": "Moving to a Tech Lead role, Working on More Side projects, Learning Sveltekit and C# | 2022 review",
+            "summary": "It's that time of the year again – the end of the year – and it's a great opportunity to reflect on the past 12 months and all that we've accomplished. This year has flown by, but it's been a year of growth and learning for me. I also wrote about my experience in 2021 if you want to take a look at how that went down.",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
             "id": "nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster",
             "url": "nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster",
             "title": "11 easy tips to fix bugs and debug your code faster",

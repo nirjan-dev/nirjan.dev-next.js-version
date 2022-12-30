@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>nirjan.dev</id>
     <title>Nirjan Khadka's Blog</title>
-    <updated>2022-11-14T04:37:27.051Z</updated>
+    <updated>2022-12-30T04:17:03.910Z</updated>
     <generator>Next.js</generator>
     <link rel="alternate" href="nirjan.dev"/>
     <link rel="self" href="nirjan.dev/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>nirjan.dev/logo.png</logo>
     <icon>nirjan.dev/favicon.png</icon>
     <rights>All rights reserved 2022, Nirjan Khadka</rights>
+    <entry>
+        <title type="html"><![CDATA[Moving to a Tech Lead role, Working on More Side projects, Learning Sveltekit and C# | 2022 review]]></title>
+        <id>nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review</id>
+        <link href="nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review"/>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's that time of the year again – the end of the year – and it's a great opportunity to reflect on the past 12 months and all that we've accomplished. This year has flown by, but it's been a year of growth and learning for me. I also wrote about my experience in 2021 if you want to take a look at how that went down.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[11 easy tips to fix bugs and debug your code faster]]></title>
         <id>nirjan.dev/blog/11-easy-tips-to-fix-bugs-and-debug-your-code-faster</id>

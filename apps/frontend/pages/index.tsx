@@ -11,7 +11,7 @@ import { DateFormatter } from "utils/dateFormatter";
 
 export default function Index({ postList }) {
   const description =
-    "I make websites and applications that are fast, user friendly and accessible. I work with modern JavaScript, CSS, HTML, Vue, React and Node.js";
+    "I make websites and applications that are fast, user friendly and accessible. I work with modern JavaScript, CSS, HTML, Vue, Svelte, React and Node.js";
   const title = "Nirjan Khadka | Developer specializing in Web and Mobile App";
   const url = "https://nirjan.dev";
   return (
