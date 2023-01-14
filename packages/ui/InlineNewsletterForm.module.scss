@@ -1,0 +1,29 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+    margin-right: var(--spacing-05);
+    margin-bottom: var(--spacing-1);
+    border-radius: var(--border-radius-normal);
+    padding: var(--spacing-05) var(--spacing-1);
+}
+
+.button {
+    border-radius: var(--border-radius-normal);
+    padding: var(--spacing-05) var(--spacing-1);
+    background: var(--primary-gradient);
+    color: var(--white);   
+    margin-bottom: var(--spacing-1);
+    border-color: var(--primary-dark);
+    
+}
+
+.copy {
+    margin-bottom: var(--spacing-05);
+    font-size: var(--font-size-1);
+    color: var(--dark);
+}

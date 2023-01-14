@@ -46,6 +46,7 @@
     --success: hsl(125, 62%, 32%);
     --danger: hsl(5, 85%, 29%);
     --link-color: var(--secondary-dark);
+    --white: #f3f3f3;
   
     /* typography */
     --body-font-family: 'Recursive', Tahoma, Arial, Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',

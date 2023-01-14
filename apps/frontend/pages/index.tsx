@@ -4,16 +4,19 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import { NextSeo, SocialProfileJsonLd, WebPageJsonLd } from "next-seo";
 import Link from "next/link";
-import { BlogList } from "components/BlogList";
 import { sanityClient } from "lib/sanity.server";
 import { groq } from "next-sanity";
 import { DateFormatter } from "utils/dateFormatter";
+import { InlineNewsletterForm } from "ui";
 
 export default function Index({ postList }) {
   const description =
     "I make websites and applications that are fast, user friendly and accessible. I work with modern JavaScript, CSS, HTML, Vue, Svelte, React and Node.js";
   const title = "Nirjan Khadka | Developer specializing in Web and Mobile App";
   const url = "https://nirjan.dev";
+  const formID = "4004884";
+
+  console.log({ formID });
   return (
     <Layout>
       <NextSeo
@@ -73,6 +76,8 @@ export default function Index({ postList }) {
                 </a>
                 .
               </h2>
+
+              <InlineNewsletterForm formId={formID}></InlineNewsletterForm>
             </div>
 
             <Image
