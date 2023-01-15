@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>nirjan.dev</id>
     <title>Nirjan Khadka's Blog</title>
-    <updated>2022-12-30T04:17:03.910Z</updated>
+    <updated>2023-01-15T05:26:03.569Z</updated>
     <generator>Next.js</generator>
     <link rel="alternate" href="nirjan.dev"/>
     <link rel="self" href="nirjan.dev/atom.xml"/>
     <subtitle>I write about different web technologies like HTML, CSS, JavaScript, Svelte, Vue, Storybook, Node.js, SVG, WebGL, web animation and best coding practices.</subtitle>
     <logo>nirjan.dev/logo.png</logo>
     <icon>nirjan.dev/favicon.png</icon>
-    <rights>All rights reserved 2022, Nirjan Khadka</rights>
+    <rights>All rights reserved 2023, Nirjan Khadka</rights>
     <entry>
         <title type="html"><![CDATA[Moving to a Tech Lead role, Working on More Side projects, Learning Sveltekit and C# | 2022 review]]></title>
         <id>nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review</id>

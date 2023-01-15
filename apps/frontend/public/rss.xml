@@ -4,7 +4,7 @@
         <title>Nirjan Khadka's Blog</title>
         <link>nirjan.dev</link>
         <description>I write about different web technologies like HTML, CSS, JavaScript, Svelte, Vue, Storybook, Node.js, SVG, WebGL, web animation and best coding practices.</description>
-        <lastBuildDate>Fri, 30 Dec 2022 04:17:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jan 2023 05:26:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Next.js</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>nirjan.dev/logo.png</url>
             <link>nirjan.dev</link>
         </image>
-        <copyright>All rights reserved 2022, Nirjan Khadka</copyright>
+        <copyright>All rights reserved 2023, Nirjan Khadka</copyright>
         <item>
             <title><![CDATA[Moving to a Tech Lead role, Working on More Side projects, Learning Sveltekit and C# | 2022 review]]></title>
             <link>nirjan.dev/blog/moving-to-a-tech-lead-role-working-on-more-side-projects-learning-sveltekit-and-c-sharp-2022-review</link>

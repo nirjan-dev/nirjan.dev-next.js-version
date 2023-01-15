@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/headroom.js": "^0.12.2",
+    "@types/react-modal": "^3.13.1",
     "@vanilla-extract/babel-plugin": "^1.1.4",
     "@vanilla-extract/css": "^1.6.8",
     "@vanilla-extract/css-utils": "^0.1.2",
@@ -22,6 +23,7 @@
     "next-sanity-image": "^3.2.1",
     "react-headroom": "^3.2.0",
     "react-icons": "^4.3.1",
+    "react-modal": "^3.16.1",
     "react-syntax-highlighter": "^15.4.5",
     "sass": "^1.45.1"
   }

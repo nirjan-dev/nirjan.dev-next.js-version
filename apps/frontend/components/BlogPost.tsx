@@ -8,7 +8,21 @@ import styles from "./BlogPost.module.scss";
 export const BlogPost = ({ post }) => {
   const comments = useRef();
 
+  // const [openNewsletterModal, setOpenNewsletterModal] = useState(false);
+
+  // const handleScroll = () => {
+  //   const scrollPercent =
+  //     (document.documentElement.scrollTop + document.body.scrollTop) /
+  //     (document.documentElement.scrollHeight -
+  //       document.documentElement.clientHeight);
+  //   if (scrollPercent >= 0.8) {
+  //     setOpenNewsletterModal(true);
+  //   }
+  // };
+
   useEffect(() => {
+    // window.addEventListener("scroll", handleScroll);
+
     const commentsContainer = comments?.current;
     if (commentsContainer) {
       const script = document.createElement("script");
@@ -23,6 +37,7 @@ export const BlogPost = ({ post }) => {
     }
 
     return () => {
+      // window.removeEventListener("scroll", handleScroll);
       if (commentsContainer) {
         const script = document.getElementById("utterances");
         if (script) {
@@ -70,9 +85,8 @@ export const BlogPost = ({ post }) => {
           {/* */}
           <ShareLinks slug={post.slug} title={post.title} />
 
-          {/* <NewsletterForm hydrate-client={{}} />
-          
-          */}
+          {/* <Modal openModalFromParent={openNewsletterModal}></Modal> */}
+
           <div ref={comments} id="comments"></div>
         </div>
       </Container>

@@ -16,7 +16,6 @@ export default function Index({ postList }) {
   const url = "https://nirjan.dev";
   const formID = "4004884";
 
-  console.log({ formID });
   return (
     <Layout>
       <NextSeo

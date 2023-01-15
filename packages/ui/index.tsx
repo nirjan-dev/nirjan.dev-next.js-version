@@ -9,3 +9,4 @@ export * from "./SanityImage";
 export * from "./CodeBlock";
 export * from "./ShareLinks";
 export * from "./InlineNewsletterForm";
+export * from "./Modal";

@@ -19,6 +19,7 @@
     "nextjs-google-analytics": "^2.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-visibility-sensor": "^5.1.1",
     "slugify": "^1.6.5",
     "ui": "*",
     "validator": "^13.7.0"
