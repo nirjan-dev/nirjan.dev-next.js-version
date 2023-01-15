@@ -15,8 +15,6 @@ function subscribeToForm(params: {
     first_name: params.firstName,
   });
 
-  console.log({ url, body });
-
   const headers = new Headers({
     "Content-Type": "application/json; charset=utf-8",
   });

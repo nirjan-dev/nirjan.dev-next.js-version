@@ -1,7 +1,7 @@
 import { PortableText } from "lib/sanity";
 import { useEffect, useRef } from "react";
 import slugify from "slugify";
-import { Banner, Container, ShareLinks, Toc } from "ui";
+import { Banner, Container, InlineNewsletterForm, ShareLinks, Toc } from "ui";
 import { DateFormatter } from "utils/dateFormatter";
 import styles from "./BlogPost.module.scss";
 
@@ -83,8 +83,13 @@ export const BlogPost = ({ post }) => {
             <PortableText blocks={post.body} />
           </article>
           {/* */}
+
           <ShareLinks slug={post.slug} title={post.title} />
 
+          <InlineNewsletterForm
+            formId="4007452"
+            copyText="If you enjoyed reading this post and want to stay updated on similar content then subscribe to my newsletter. No spam, just good stuff. 🙏 Unsubscribe anytime."
+          />
           {/* <Modal openModalFromParent={openNewsletterModal}></Modal> */}
 
           <div ref={comments} id="comments"></div>

@@ -4,8 +4,9 @@ import styles from "./InlineNewsletterForm.module.scss";
 export const InlineNewsletterForm: React.FC<
   React.PropsWithChildren<{
     formId: string;
+    copyText?: string;
   }>
-> = ({ formId, children }) => {
+> = ({ formId, copyText, children }) => {
   const emailNameAttribute = "email";
   const firstNameNameAttribute = "firstName";
 
@@ -77,8 +78,9 @@ export const InlineNewsletterForm: React.FC<
   return (
     <>
       <p className={styles.copy}>
-        Subscribe to my newsletter to receive updates. No spam, ever.
-        Unsubscribe at any time.
+        {copyText
+          ? copyText
+          : "Get the latest web dev tips & tools by subscribing to my newsletter. Never miss out on valuable insights and resources to make the web a better place."}
       </p>
       <form className={styles.form} target="_blank" onSubmit={onSubmit}>
         <input
