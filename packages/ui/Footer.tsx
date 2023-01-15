@@ -1,28 +1,24 @@
 import { Container } from "./Container";
 import { SocialMenuItem } from "./SubMenu";
 import {
-  IoLogoCodepen,
   IoLogoTwitter,
   IoLogoGithub,
-  IoLogoInstagram,
   IoLogoRss,
+  IoLogoLinkedin,
 } from "react-icons/io";
 import styles from "./Footer.module.scss";
 
 function getSelectedIcon(icon: string) {
   let selectedIcon;
   switch (icon) {
-    case "IoLogoCodepen":
-      selectedIcon = <IoLogoCodepen />;
-      break;
     case "IoLogoTwitter":
       selectedIcon = <IoLogoTwitter />;
       break;
     case "IoLogoGithub":
       selectedIcon = <IoLogoGithub />;
       break;
-    case "IoLogoInstagram":
-      selectedIcon = <IoLogoInstagram />;
+    case "IoLogoLinkedin":
+      selectedIcon = <IoLogoLinkedin />;
       break;
     case "IoLogoRss":
       selectedIcon = <IoLogoRss />;

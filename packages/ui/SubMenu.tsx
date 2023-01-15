@@ -2,10 +2,10 @@ import { useState } from "react";
 import styles from "./SubMenu.module.scss";
 import { FaLink } from "react-icons/fa";
 import {
-  IoLogoCodepen,
   IoLogoTwitter,
   IoLogoGithub,
-  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoRss,
 } from "react-icons/io";
 export interface SocialMenuItem {
   title: string;
@@ -16,18 +16,17 @@ export interface SocialMenuItem {
 function getSelectedIcon(icon: string) {
   let selectedIcon;
   switch (icon) {
-    case "IoLogoCodepen":
-      selectedIcon = <IoLogoCodepen />;
-      break;
     case "IoLogoTwitter":
       selectedIcon = <IoLogoTwitter />;
       break;
     case "IoLogoGithub":
       selectedIcon = <IoLogoGithub />;
       break;
-    case "IoLogoInstagram":
-      selectedIcon = <IoLogoInstagram />;
+    case "IoLogoLinkedin":
+      selectedIcon = <IoLogoLinkedin />;
       break;
+    case "IoLogoRss":
+      selectedIcon = <IoLogoRss />;
     default:
       break;
   }

@@ -54,24 +54,16 @@ export default function Index({ postList }) {
                 Hi, I&apos;m Nirjan.
               </h1>
               <h2 className={styles.introBanner__subTitle}>
-                I build websites and apps that are fast, user friendly, and
-                accessible. I also love sharing stuff that I&apos;m learning and
-                building through my &nbsp;
-                <Link href="/blog">blog</Link>, &nbsp;
+                I love building websites and apps that are fast, user friendly,
+                and accessible. I also love sharing stuff that I&apos;m learning
+                and building through my &nbsp;
+                <Link href="/blog">blog</Link> and &nbsp;
                 <a
                   href="https://twitter.com/nirjan_dev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   twitter
-                </a>
-                &nbsp; and &nbsp;
-                <a
-                  href="https://instagram.com/nirjan.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  instagram
                 </a>
                 .
               </h2>
