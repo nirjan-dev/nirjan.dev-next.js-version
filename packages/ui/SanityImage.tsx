@@ -19,9 +19,11 @@ export const SanityImage = ({
   };
 }) => {
   const imageProps = useNextSanityImage(configuredSanityClient, node.asset);
+  const alt = (node as any).alt || "";
   return (
     <Img
       {...imageProps}
+      alt={alt}
       layout="responsive"
       sizes="(max-width: 800px) 100vw, 800px"
     />
