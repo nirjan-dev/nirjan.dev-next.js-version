@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>nirjan.dev</id>
     <title>Nirjan Khadka's Blog</title>
-    <updated>2023-01-15T05:41:51.296Z</updated>
+    <updated>2023-01-19T04:09:12.128Z</updated>
     <generator>Next.js</generator>
     <link rel="alternate" href="nirjan.dev"/>
     <link rel="self" href="nirjan.dev/atom.xml"/>
@@ -60,10 +60,10 @@
         <summary type="html"><![CDATA[If you have ever been confused about the value of this in JavaScript then this guide will help you figure out how you can solve this problem. There's a cheat sheet at the end that can help you quickly figure out the value of this if you want to skip to that.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[What is a JavaScript closure and JavaScript scope]]></title>
+        <title type="html"><![CDATA[Simple Guide to Javascript Closures for beginners]]></title>
         <id>nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</id>
         <link href="nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes"/>
-        <updated>2022-08-09T02:26:20.252Z</updated>
-        <summary type="html"><![CDATA[In this post, I explain how a JavaScript closure works and what does JavaScript scope mean. In the end, I will also give some examples of JavaScript Closures in action.]]></summary>
+        <updated>2023-01-16T04:47:32.238Z</updated>
+        <summary type="html"><![CDATA[In this post, I explain how a Javascript closure works and what is lexical scope in Javascript. In the end, I will also show you a Javascript closure example.]]></summary>
     </entry>
 </feed>

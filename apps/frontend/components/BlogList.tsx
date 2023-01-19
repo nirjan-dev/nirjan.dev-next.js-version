@@ -4,6 +4,7 @@ import styles from "./BlogList.module.scss";
 export interface BlogListItem {
   title: string;
   publishedAt: string;
+  updatedAt?: string;
   excerpt: string;
   slug: string;
   categories: { title: string; slug: string }[];
@@ -12,6 +13,7 @@ export interface BlogListItem {
 const BlogListItem = ({
   title,
   publishedAt,
+  updatedAt,
   categories,
   excerpt,
   slug,
@@ -25,7 +27,7 @@ const BlogListItem = ({
       </h2>
       <p className={styles.posts__meta}>
         <small className={styles.posts__date}>
-          {DateFormatter(publishedAt)}{" "}
+          {DateFormatter(updatedAt ?? publishedAt)}{" "}
         </small>
 
         {categories &&

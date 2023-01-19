@@ -4,7 +4,7 @@
         <title>Nirjan Khadka's Blog</title>
         <link>nirjan.dev</link>
         <description>I write about different web technologies like HTML, CSS, JavaScript, Svelte, Vue, Storybook, Node.js, SVG, WebGL, web animation and best coding practices.</description>
-        <lastBuildDate>Sun, 15 Jan 2023 05:41:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Jan 2023 04:09:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Next.js</generator>
         <image>
@@ -63,11 +63,11 @@
             <description><![CDATA[If you have ever been confused about the value of this in JavaScript then this guide will help you figure out how you can solve this problem. There's a cheat sheet at the end that can help you quickly figure out the value of this if you want to skip to that.]]></description>
         </item>
         <item>
-            <title><![CDATA[What is a JavaScript closure and JavaScript scope]]></title>
+            <title><![CDATA[Simple Guide to Javascript Closures for beginners]]></title>
             <link>nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</link>
             <guid>nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes</guid>
-            <pubDate>Tue, 09 Aug 2022 02:26:20 GMT</pubDate>
-            <description><![CDATA[In this post, I explain how a JavaScript closure works and what does JavaScript scope mean. In the end, I will also give some examples of JavaScript Closures in action.]]></description>
+            <pubDate>Mon, 16 Jan 2023 04:47:32 GMT</pubDate>
+            <description><![CDATA[In this post, I explain how a Javascript closure works and what is lexical scope in Javascript. In the end, I will also show you a Javascript closure example.]]></description>
         </item>
     </channel>
 </rss>

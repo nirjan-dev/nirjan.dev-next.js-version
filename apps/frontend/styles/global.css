@@ -204,7 +204,7 @@
     font-variation-settings: 'CASL' 1;
   }
   strong {
-    color: var(--primary-dark);
+    color: var(--primary-darkest);
   }
   p,
   h1,

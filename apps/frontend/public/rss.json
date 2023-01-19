@@ -58,9 +58,9 @@
         {
             "id": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
             "url": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
-            "title": "What is a JavaScript closure and JavaScript scope",
-            "summary": "In this post, I explain how a JavaScript closure works and what does JavaScript scope mean. In the end, I will also give some examples of JavaScript Closures in action.",
-            "date_modified": "2022-08-09T02:26:20.252Z"
+            "title": "Simple Guide to Javascript Closures for beginners",
+            "summary": "In this post, I explain how a Javascript closure works and what is lexical scope in Javascript. In the end, I will also show you a Javascript closure example.",
+            "date_modified": "2023-01-16T04:47:32.238Z"
         }
     ]
 }
