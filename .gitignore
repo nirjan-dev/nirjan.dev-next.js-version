@@ -12,6 +12,12 @@ coverage
 .next/
 out/
 build
+apps/frontend/public/atom.xml
+apps/frontend/public/rss.json
+apps/frontend/public/rss.json
+apps/frontend/public/rss.xml
+apps/frontend/public/sitemap-0.xml
+
 
 # misc
 .DS_Store
@@ -34,3 +40,4 @@ yarn-error.log*
 
 # sanity
 dist/
+
