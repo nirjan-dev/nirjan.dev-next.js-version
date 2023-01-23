@@ -129,7 +129,7 @@ const postListQuery = groq`
     publishedAt,
     updatedAt,
     "slug": slug.current
-  }[0...3]
+  }[0...6]
 `;
 
 export async function getStaticProps() {

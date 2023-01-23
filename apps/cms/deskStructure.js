@@ -43,6 +43,50 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      S.documentTypeListItem("post"),
+      S.listItem()
+        .title("Posts")
+        .child(
+          S.list()
+            .title("Posts")
+            .items([
+              S.listItem()
+                .title("All Posts")
+                .schemaType("post")
+                .child(S.documentTypeList("post").title("All Posts")),
+              S.listItem()
+                .title("Featured Posts")
+                .schemaType("post")
+                .child(
+                  S.documentTypeList("post")
+                    .title("Featured Posts")
+                    .filter("_type == $type && featured == true")
+                    .params({ type: "post" })
+                ),
+              S.listItem()
+                .title("By Category")
+                .child(
+                  S.documentTypeList("category")
+                    .title("Posts By Category")
+                    .child((categoryId) =>
+                      S.documentTypeList("post")
+                        .title("Posts")
+                        .filter(
+                          '_type == "post" && $categoryId in categories[]._ref'
+                        )
+                        .params({ categoryId })
+                    )
+                ),
+
+              S.listItem()
+                .title("Drafts")
+                .schemaType("post")
+                .child(
+                  S.documentTypeList("post")
+                    .title("Drafts")
+                    .filter("_type == $type && !defined(publishedAt)")
+                    .params({ type: "post" })
+                ),
+            ])
+        ),
       S.documentTypeListItem("category"),
     ]);
