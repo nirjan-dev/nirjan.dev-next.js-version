@@ -24,7 +24,6 @@ export const getDefaultDocumentNode = () => {
       .options({
         // Retrieve the keywords and synonyms at the given dot-notated strings
         keywords: (doc) => {
-          console.log({ doc });
           return doc.seoKeywords;
         },
         synonyms: (doc) => doc.seoSynonyms,

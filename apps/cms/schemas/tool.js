@@ -57,6 +57,16 @@ export default {
     },
 
     {
+      name: "mainImage",
+      title: "Main image",
+      type: "image",
+      validation: (Rule) => Rule.required(),
+      options: {
+        hotspot: true,
+      },
+    },
+
+    {
       name: "hasReview",
       title: "Has Review",
       type: "boolean",
@@ -88,16 +98,6 @@ export default {
       type: "text",
       hidden: customHiddenLogic,
       validation: customValidation,
-    },
-    {
-      name: "mainImage",
-      title: "Main image",
-      type: "image",
-      hidden: customHiddenLogic,
-      validation: customValidation,
-      options: {
-        hotspot: true,
-      },
     },
 
     {

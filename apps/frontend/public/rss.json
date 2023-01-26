@@ -37,9 +37,9 @@
         {
             "id": "nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro",
             "url": "nirjan.dev/blog/step-by-step-guide-to-truncating-text-in-css-shorten-text-like-a-pro",
-            "title": "Step by Step guide to truncating text in CSS; shorten text like a pro",
-            "summary": "In this post, I'll show you how to truncate text in CSS. I will cover how to shorten both single lines and multi-lines. I'll also mention some common problems you may face when truncating text.",
-            "date_modified": "2022-11-02T04:20:48.550Z"
+            "title": "Step by Step guide to CSS text truncate; shorten text like a pro",
+            "summary": "In this post, I'll show you how to implement a CSS text truncate. I will cover how to shorten both a single line and multiple lines. I'll also mention some common problems you may face when doing a CSS text truncate.",
+            "date_modified": "2023-01-25T04:29:03.255Z"
         },
         {
             "id": "nirjan.dev/blog/tips-for-beginners-learning-to-code",
@@ -51,16 +51,16 @@
         {
             "id": "nirjan.dev/blog/understanding-this-in-javascript",
             "url": "nirjan.dev/blog/understanding-this-in-javascript",
-            "title": "WTF is this? 4 rules to easily figure out this in javascript",
-            "summary": "If you have ever been confused about the value of this in JavaScript then this guide will help you figure out how you can solve this problem. There's a cheat sheet at the end that can help you quickly figure out the value of this if you want to skip to that.",
-            "date_modified": "2022-11-02T03:58:42.289Z"
+            "title": "How to easily understand \"this\" in Javascript - with a simple visual chart",
+            "summary": "This post will help you figure out how you can easily find out the value of “this” in JavaScript. If you're in a hurry, there's a JavaScript this keyword cheat sheet at the end.",
+            "date_modified": "2023-01-24T04:50:19.728Z"
         },
         {
             "id": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
             "url": "nirjan.dev/blog/understanding-lexical-scope-and-closures-in-3-minutes",
-            "title": "Simple Guide to Javascript Closures for beginners",
-            "summary": "In this post, I explain how a Javascript closure works and what is lexical scope in Javascript. In the end, I will also show you a Javascript closure example.",
-            "date_modified": "2023-01-16T04:47:32.238Z"
+            "title": "Javascript Closures Complete Guide - with practical use cases and examples",
+            "summary": "In this post, I explain how JavaScript Closures work and what is Lexical Scope in JavaScript. In the end, I will also show you examples of JavaScript Closures. Having some previous knowledge about how JavaScript variables and functions work is necessary to continue on with this post.",
+            "date_modified": "2023-01-23T04:58:43.316Z"
         }
     ]
 }
