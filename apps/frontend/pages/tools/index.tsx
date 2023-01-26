@@ -1,5 +1,5 @@
 import { groq } from "next-sanity";
-import { Banner, Container } from "ui";
+import { Banner, Container, InlineNewsletterForm } from "ui";
 import Layout from "../../components/Layout";
 import { sanityClient } from "lib/sanity.server";
 import { NextSeo, WebPageJsonLd } from "next-seo";
@@ -77,6 +77,16 @@ export default function Blog({ toolsList }) {
               );
             })}
           </ul>
+        </div>
+      </Container>
+
+      <Container isFlex={true}>
+        <div>
+          <InlineNewsletterForm
+            copyText="Subscribe to get the most useful tools directly to your inbox. Unsubscribe anytime."
+            formId="4798512"
+            noRSS
+          />
         </div>
       </Container>
 

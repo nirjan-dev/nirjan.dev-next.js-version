@@ -5,8 +5,9 @@ export const InlineNewsletterForm: React.FC<
   React.PropsWithChildren<{
     formId: string;
     copyText?: string;
+    noRSS?: boolean;
   }>
-> = ({ formId, copyText, children }) => {
+> = ({ formId, copyText, noRSS, children }) => {
   const emailNameAttribute = "email";
   const firstNameNameAttribute = "firstName";
 
@@ -82,9 +83,13 @@ export const InlineNewsletterForm: React.FC<
           ? copyText
           : "Get the latest web dev tips & tools by subscribing to my newsletter. Never miss out on valuable insights and resources to make the web a better place."}
       </p>
-      <p>
-        You can also subscribe to my <a href="/rss.xml">RSS feed</a>.
-      </p>
+
+      {noRSS ? null : (
+        <p>
+          You can also subscribe to my <a href="/rss.xml">RSS feed</a>.
+        </p>
+      )}
+
       <form className={styles.form} target="_blank" onSubmit={onSubmit}>
         <input
           className={styles.input}
