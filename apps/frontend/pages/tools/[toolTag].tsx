@@ -7,6 +7,7 @@ import { urlFor } from "lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.scss";
+import ErrorPage from "next/error";
 
 const toolTagQuery = groq`
   *[_type == "toolTag" 
@@ -37,7 +38,9 @@ const toolTagQuery = groq`
   }[0]
 `;
 
-export default function Blog({ toolTag }) {
+export default function ToolTag({ toolTag }) {
+  if (!toolTag) return <ErrorPage statusCode={404} />;
+
   const title = `Best ${toolTag.title} Tools and Resources for building Apps and Sites`;
   const description = `List of ${toolTag.title} Tools and Resources for making Apps and Sites curated by Nirjan Khadka`;
   const url = "https://nirjan.dev/tools";
@@ -124,6 +127,10 @@ export async function getStaticProps({ params }) {
   const toolTag = await sanityClient.fetch(toolTagQuery, {
     toolTag: params.toolTag,
   });
+
+  if (!toolTag) {
+    return { notFound: true };
+  }
 
   return {
     props: {

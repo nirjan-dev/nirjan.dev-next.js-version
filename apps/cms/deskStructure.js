@@ -89,4 +89,5 @@ export default () =>
         ),
       S.documentTypeListItem("category"),
       S.documentTypeListItem("tool"),
+      S.documentTypeListItem("toolTag"),
     ]);
