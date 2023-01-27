@@ -30,8 +30,8 @@
 
     &__icon {
       display: inline-block;
-      width: 2em;
-      height: 2em;
+      width: 1.5em;
+      height: 1.5em;
 
       svg {
         width: 100%;
@@ -55,7 +55,7 @@
     transition: color 100ms linear;
     display: inline-block;
     padding: var(--spacing-0) var(--spacing-2);
-    min-width: 5rem;
+    min-width: 3rem;
     text-align: center;
     &:hover,
     &:active,
@@ -69,6 +69,11 @@
       &:focus {
         color: var(--darkest);
       }
+
+      font-size: var(--font-size-1);
+      padding: var(--spacing-0) var(--spacing-05);
+
+
     }
   }
 }

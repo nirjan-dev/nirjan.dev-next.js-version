@@ -17,6 +17,11 @@ const navItems = [
     icon: "IoIosBook",
   },
   {
+    name: "Tools",
+    link: "/tools",
+    icon: "IoIosBuild",
+  },
+  {
     name: "Contact",
     link: "/contact",
     icon: "MdEmail",

@@ -1,5 +1,5 @@
 import { SocialMenuItem, SubMenu } from "./SubMenu";
-import { IoMdHome, IoIosBook } from "react-icons/io";
+import { IoMdHome, IoIosBook, IoIosBuild } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
@@ -21,6 +21,9 @@ function getSelectedIcon(icon: string) {
       break;
     case "MdEmail":
       selectedIcon = <MdEmail />;
+      break;
+    case "IoIosBuild":
+      selectedIcon = <IoIosBuild />;
     default:
       break;
   }

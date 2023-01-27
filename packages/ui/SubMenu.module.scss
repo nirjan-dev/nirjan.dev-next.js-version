@@ -1,6 +1,6 @@
 .menuBtn {
   color: var(--dark);
-  padding: var(--spacing-0) var(--spacing-2);
+  padding: var(--spacing-0) var(--spacing-05);
   min-width: 5rem;
   background-color: transparent;
   border: unset;
@@ -56,8 +56,8 @@
 }
 
 .icon {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   color: inherit;
   display: inline-block;
 
@@ -70,42 +70,6 @@
   }
 }
 
-.ggMenu {
-  transform: scale(var(--ggs, 1));
-}
-.ggMenu,
-.ggMenu::after,
-.ggMenu::before {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  width: 25px;
-  height: 3px;
-  border-radius: 3px;
-  background: currentColor;
-  transition: opacity 0.1s, transform 0.2s ease-out;
-}
-.ggMenu::after,
-.ggMenu::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-}
-.ggMenu::after {
-  top: 8px;
-}
 
-.menuBtn {
-  &.isActive {
-    .ggMenu::before {
-      opacity: 0;
-    }
-    .ggMenu::after {
-      transform: rotate(-90deg) translateX(8px);
-    }
 
-    .ggMenu {
-      transform: rotate(44deg);
-    }
-  }
-}
+
