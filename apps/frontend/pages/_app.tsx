@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
           window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
           cronitor('config', {
               clientKey: 'b3c0c9620639d250614cadadd5b5bc64',
-              debug: true,
+              debug: false,
           });
   `,
         }}
