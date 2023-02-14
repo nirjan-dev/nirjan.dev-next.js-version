@@ -9,10 +9,23 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        id="panelbear-js"
-        src="https://cdn.panelbear.com/analytics.js?site=ByU4h80Ugbv"
+        id="cronitor-js"
+        src="https://rum.cronitor.io/script.js"
         async={true}
       />
+      <Script
+        id="cronitor-init"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+          cronitor('config', {
+              clientKey: 'b3c0c9620639d250614cadadd5b5bc64',
+              debug: true,
+          });
+  `,
+        }}
+      />
+
       <Script
         id="panelbear-init"
         dangerouslySetInnerHTML={{
