@@ -40,11 +40,7 @@ const BlockRenderer = (props) => {
   return BlockContent.defaultSerializers.types.block(props);
 };
 
-// Set up Portable Text serialization
-export const PortableText = createPortableTextComponent({
-  ...config,
-  // Serializers passed to @sanity/block-content-to-react
-  // (https://github.com/sanity-io/block-content-to-react)
+export const PortableTextConfig = {
   serializers: {
     marks: {
       internalLink: internalLink,
@@ -52,6 +48,14 @@ export const PortableText = createPortableTextComponent({
     },
     types: { block: BlockRenderer, image: SanityImage, code: CodeBlock },
   },
+};
+
+// Set up Portable Text serialization
+export const PortableText = createPortableTextComponent({
+  ...config,
+  // Serializers passed to @sanity/block-content-to-react
+  // (https://github.com/sanity-io/block-content-to-react)
+  ...PortableTextConfig,
 });
 
 // Helper function for using the current logged in user account

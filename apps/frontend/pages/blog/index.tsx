@@ -71,7 +71,6 @@ export default function Blog({ postList }) {
 
 export async function getStaticProps() {
   const postList = await sanityClient.fetch(postListQuery);
-  await generateRssFeed();
 
   return {
     props: {
