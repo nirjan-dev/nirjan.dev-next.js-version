@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "postDeploy": "curl -X GET https://nirjan.dev/api/generate-rss"
-  }
-}
