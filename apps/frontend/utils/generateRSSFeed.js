@@ -37,7 +37,7 @@ export default async function generateRssFeed() {
         }
     `
   );
-  const site_url = "nirjan.dev";
+  const site_url = "https://nirjan.dev";
 
   const feedOptions = {
     title: "Nirjan Khadka's Blog",
@@ -64,7 +64,7 @@ export default async function generateRssFeed() {
       id: `${site_url}/blog/${post.slug}`,
       link: `${site_url}/blog/${post.slug}`,
       description: post.excerpt,
-      date: new Date(post.updatedAt),
+      date: new Date(post.updatedAt ?? post.publishedAt),
       content: `
       <p>${post.excerpt}</p>
       ${ReactDOMServer.renderToStaticMarkup(
@@ -74,7 +74,7 @@ export default async function generateRssFeed() {
     });
   });
 
-  fs.writeFileSync("./public/rss.xml", feed.rss2());
-  fs.writeFileSync("./public/rss.json", feed.json1());
-  fs.writeFileSync("./public/atom.xml", feed.atom1());
+  fs.writeFileSync("./public/rss.xml", feed.rss2(), { flag: "w" });
+  fs.writeFileSync("./public/rss.json", feed.json1(), { flag: "w" });
+  fs.writeFileSync("./public/atom.xml", feed.atom1(), { flag: "w" });
 }

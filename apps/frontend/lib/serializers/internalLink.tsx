@@ -6,7 +6,7 @@ export const internalLink = ({ mark, children }) => {
   if (!slug?.current) {
     return <span>{children}</span>;
   }
-  const href = `/blog/${slug?.current}`;
+  const href = `https://nirjan.dev/blog/${slug?.current}`;
 
   return blank ? (
     <a href={href} target="_blank" rel="noopener noreferrer">
