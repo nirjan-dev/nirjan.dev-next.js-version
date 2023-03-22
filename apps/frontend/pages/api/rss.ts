@@ -2,9 +2,14 @@ import generateRssFeed from "utils/generateRSSFeed";
 
 export default async function generateRss(req, res) {
   try {
-    await generateRssFeed();
+    const xml = await generateRssFeed();
     console.log("Successfully generated RSS feed");
-    return res.status(200).json({ message: "Successfully generated RSS feed" });
+    res.setHeader("Content-Type", "application/xml");
+
+    res.write(xml);
+
+    res.end();
+    return {};
   } catch (error) {
     console.log("Generating RSS feed failed");
     return res

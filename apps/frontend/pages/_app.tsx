@@ -100,6 +100,11 @@ export default function MyApp({ Component, pageProps }) {
             href: "/safari-pinned-tab.svg",
             color: "#845ec2",
           },
+          {
+            rel: "alternate",
+            type: "application/rss+xml",
+            href: "https://nirjan.dev/api/rss",
+          },
         ]}
       />
       <Component {...pageProps} />

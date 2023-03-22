@@ -74,7 +74,5 @@ export default async function generateRssFeed() {
     });
   });
 
-  fs.writeFileSync("./public/rss.xml", feed.rss2(), { flag: "w" });
-  fs.writeFileSync("./public/rss.json", feed.json1(), { flag: "w" });
-  fs.writeFileSync("./public/atom.xml", feed.atom1(), { flag: "w" });
+  return feed.rss2();
 }

@@ -86,7 +86,7 @@ export const InlineNewsletterForm: React.FC<
 
       {noRSS ? null : (
         <p>
-          You can also subscribe to my <a href="/rss.xml">RSS feed</a>.
+          You can also subscribe to my <a href="/api/rss">RSS feed</a>.
         </p>
       )}
 

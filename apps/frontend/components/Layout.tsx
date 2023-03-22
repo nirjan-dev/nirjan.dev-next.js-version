@@ -18,7 +18,7 @@ const socialMenuItems = [
   },
   {
     title: "RSS Feed",
-    link: "https://nirjan.dev/rss.xml",
+    link: "https://nirjan.dev/api/rss",
     icon: "IoLogoRss",
   },
 ];
