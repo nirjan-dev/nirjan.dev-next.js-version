@@ -43,7 +43,7 @@ export default function ToolTag({ toolTag }) {
 
   const title = `Best ${toolTag.title} Tools and Resources for building Apps and Sites`;
   const description = `List of ${toolTag.title} Tools and Resources for making Apps and Sites curated by Nirjan Khadka`;
-  const url = "https://nirjan.dev/tools";
+  const url = `https://nirjan.dev/tools/${toolTag.slug}`;
 
   const toolsList = toolTag?.toolsList;
 

@@ -2,6 +2,10 @@ const withTM = require("next-transpile-modules")(["ui"]);
 
 const config = {
   reactStrictMode: true,
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   async redirects() {
     return [
       {
