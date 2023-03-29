@@ -1,11 +1,12 @@
 import { PortableText } from "lib/sanity";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import slugify from "slugify";
 import { Banner, Container, InlineNewsletterForm, ShareLinks, Toc } from "ui";
 import { DateFormatter } from "utils/dateFormatter";
 import styles from "./BlogPost.module.scss";
 
-export const BlogPost = ({ post }) => {
+export const BlogPost = ({ post, relatedPosts }) => {
   const comments = useRef();
 
   // const [openNewsletterModal, setOpenNewsletterModal] = useState(false);
@@ -91,6 +92,21 @@ export const BlogPost = ({ post }) => {
             copyText="If you enjoyed reading this post and want to stay updated on similar content then subscribe to my newsletter. No spam, just good stuff. 🙏 Unsubscribe anytime."
           />
           {/* <Modal openModalFromParent={openNewsletterModal}></Modal> */}
+
+          {relatedPosts.length > 0 && (
+            <div className={styles.post__related}>
+              <h3 className={styles.post__related__title}>Related Posts</h3>
+              <ul className={styles.post__related__list}>
+                {relatedPosts.map((post) => (
+                  <li key={post._id}>
+                    <Link passHref href={`/blog/${post.slug.current}`}>
+                      <a>{post.title}</a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div ref={comments} id="comments"></div>
         </div>

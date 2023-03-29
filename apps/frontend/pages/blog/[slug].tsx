@@ -45,6 +45,7 @@ export default function BlogPostPage({ data, preview }) {
   const modifiedDate = post?.updatedAt ?? publishedDate;
   const image =
     post?.mainImage && urlFor(post.mainImage).width(1200).height(630).url();
+  const relatedPosts = post?.relatedPosts || [];
 
   const postComponents = (
     <>
@@ -79,7 +80,7 @@ export default function BlogPostPage({ data, preview }) {
         description={description}
       />
 
-      <BlogPost post={post} />
+      <BlogPost post={post} relatedPosts={relatedPosts} />
     </>
   );
   return <Layout>{post && postComponents}</Layout>;
@@ -99,6 +100,11 @@ const postQuery = groq`
     publishedAt,
     updatedAt,
     "slug": slug.current,
+    "relatedPosts": *[_type == "post" && references(^.categories[]->._id) && !(_id in [^._id])][0..2] {
+      _id,
+      title,
+      slug
+    },
     mainImage,
     body[] {
       ...,
