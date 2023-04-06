@@ -53,20 +53,14 @@ export default function Index({ postList }) {
               <h1 className={styles.introBanner__title}>
                 Hi, I&apos;m Nirjan.
               </h1>
-              <h2 className={styles.introBanner__subTitle}>
-                I love building websites and apps that are fast, user friendly,
-                and accessible. I also love sharing stuff that I&apos;m learning
-                and building through my &nbsp;
-                <Link href="/blog">blog</Link> and &nbsp;
-                <a
-                  href="https://twitter.com/nirjan_dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  twitter
+              <p className={styles.introBanner__subTitle}>
+                I build websites and apps that are fast, user friendly, and SEO
+                optimized. I'm currently building the{" "}
+                <a href="https://remotedevjobs.net">
+                  best place to find remote developer jobs online
                 </a>
                 .
-              </h2>
+              </p>
 
               <InlineNewsletterForm formId={formID}></InlineNewsletterForm>
             </div>
