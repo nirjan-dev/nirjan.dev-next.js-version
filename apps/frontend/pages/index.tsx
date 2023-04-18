@@ -55,7 +55,7 @@ export default function Index({ postList }) {
               </h1>
               <p className={styles.introBanner__subTitle}>
                 I build websites and apps that are fast, user friendly, and SEO
-                optimized. I'm currently building the{" "}
+                optimized. I am currently building the{" "}
                 <a href="https://remotedevjobs.net">
                   best place to find remote developer jobs online
                 </a>
