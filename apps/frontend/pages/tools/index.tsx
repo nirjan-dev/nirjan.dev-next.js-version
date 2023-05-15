@@ -47,6 +47,13 @@ export default function Blog({ toolsList }) {
         canonical={url}
         openGraph={{
           url,
+          images: [
+            {
+              url: "https://nirjan.dev/img/tools-og.jpeg",
+              width: 1200,
+              height: 630,
+            },
+          ],
         }}
       />
       <WebPageJsonLd

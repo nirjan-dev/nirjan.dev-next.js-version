@@ -60,7 +60,7 @@ export default function MyApp({ Component, pageProps }) {
           site_name: "Nirjan.dev",
           images: [
             {
-              url: "https://cdn.sanity.io/images/rl6xlgdh/production/f8310e61d05c1ed6438acae66d6606570896d737-1918x985.png?w=1200&h=630",
+              url: "https://nirjan.dev/img/site-og.jpeg",
               width: 1200,
               height: 630,
             },
