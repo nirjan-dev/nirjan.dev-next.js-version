@@ -108,7 +108,7 @@ export default function ToolTag({ toolTag }) {
 
                 <a
                   href={tool.link}
-                  rel="nofollow noreferrer"
+                  rel="noreferrer"
                   target="_blank"
                   className={styles.toolLink}
                 >

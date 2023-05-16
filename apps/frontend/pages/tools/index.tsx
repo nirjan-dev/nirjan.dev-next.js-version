@@ -125,7 +125,7 @@ export default function Blog({ toolsList }) {
 
                 <a
                   href={tool.link}
-                  rel="nofollow noreferrer"
+                  rel="noreferrer"
                   target="_blank"
                   className={styles.toolLink}
                 >
