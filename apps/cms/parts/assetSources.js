@@ -29,21 +29,21 @@ export default [
     icon: () => <div>🎨</div>,
   },
 
-  {
-    name: "instaImageGenerate",
-    title: "Generate Insta Image",
-    component: (props) => (
-      <MediaEditor
-        // It's vital to forward props to MediaEditor
-        {...props}
-        // Our custom layouts
-        layouts={[blogPostInstagramLayout]}
-        // See dialog section below
-        dialog={{
-          title: "Create sharing image",
-        }}
-      />
-    ),
-    icon: () => <div>🎨</div>,
-  },
+  // {
+  //   name: "instaImageGenerate",
+  //   title: "Generate Insta Image",
+  //   component: (props) => (
+  //     <MediaEditor
+  //       // It's vital to forward props to MediaEditor
+  //       {...props}
+  //       // Our custom layouts
+  //       layouts={[blogPostInstagramLayout]}
+  //       // See dialog section below
+  //       dialog={{
+  //         title: "Create sharing image",
+  //       }}
+  //     />
+  //   ),
+  //   icon: () => <div>🎨</div>,
+  // },
 ];
