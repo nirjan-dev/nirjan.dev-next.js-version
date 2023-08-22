@@ -54,15 +54,16 @@ export default function Index({ postList }) {
                 Hi, I&apos;m Nirjan.
               </h1>
               <p className={styles.introBanner__subTitle}>
-                I am on a quest to achieve financial freedom and build
-                marketable products by bridging the gap between frontend and
-                backend development, design, and SEO.
+                I am fullstack product developer who makes web & mobile apps
+                that are fast, user friendly and accessible.
               </p>
 
-              <p className={styles.introBanner__subTitle}>
-                I specialize in web tech like Vue.js, Nuxt.js, Node.js, Prisma,
-                Supabase, TypeScript, PostgreSQL, and Tailwind. I am currently
-                building&nbsp;
+              <p
+                style={{
+                  marginBottom: "1.5em",
+                }}
+              >
+                I am currently building&nbsp;
                 <a href="https://remotedevjobs.net">
                   the best place to find remote dev jobs.
                 </a>
