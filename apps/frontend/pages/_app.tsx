@@ -9,49 +9,10 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        id="cronitor-js"
-        src="https://rum.cronitor.io/script.js"
-        async={true}
-      />
-      <Script
-        id="cronitor-init"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
-          cronitor('config', {
-              clientKey: 'b3c0c9620639d250614cadadd5b5bc64',
-              debug: false,
-          });
-  `,
-        }}
+        src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js"
+        data-app-id="49448263-2041-46E2-9184-45A834E928C4"
       />
 
-      <Script
-        id="panelbear-init"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.panelbear =
-          window.panelbear ||
-          function () {
-            (window.panelbear.q = window.panelbear.q || []).push(arguments);
-          };
-        panelbear('config', { site: 'ByU4h80Ugbv' });
-  `,
-        }}
-      />
-      <GoogleAnalytics trackPageViews />
-      <Script
-        id="clarity-script"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "g3oj3ab384");
-        `,
-        }}
-      />
       <DefaultSeo
         openGraph={{
           type: "website",
